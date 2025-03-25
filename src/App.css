@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+html {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  background-color: #4b8895;
+  font-family: "Jost", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.page-wrapper {
+  margin: 0 auto;
+  max-width: 1200vw;
+  padding: 16px;
+  width: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.navbar {
+  background-color: #55a8aa;
+  font-size: 16px;
+}
+
+.container {
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1080px;
+  padding: 0 16px;
 }
 
-.App-link {
-  color: #61dafb;
+.home-link {
+  width: 30%;
+  display: flex;
+  padding-left: 20px;
+  justify-content: flex-start;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.regions-link {
+  width: 70%;
+}
+
+.regions-link ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
 }

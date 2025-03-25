@@ -1,13 +1,17 @@
 var PAGE_CONTENTS_DATA = [
   {
     id: "home",
-    title: "Home",
-    description: "Home page",
+    title: "Welcome to Mira!",
+    description:
+      "Are you tired of old planet Earth? Do you want some excitement in your life? Do you want to start your life over somewhere else? If so, come over to Mira!",
   },
   {
     id: "primordia",
     title: "Primordia",
-    description: "Primordia page",
+    description:
+      'Surrounded by grassy plains, mountains, and beaches. Primordia is a very "welcoming" region with tons of locations to explore, and lots of wildlife to encounter. New Los Angeles (NLA) is located here.',
+    neighboring_region:
+      "Primordia (northwest), Oblivia (east), Sylvalum (north)",
   },
   {
     id: "noctilum",
@@ -19,12 +23,16 @@ var PAGE_CONTENTS_DATA = [
   {
     id: "oblivia",
     title: "Oblivia",
-    description: "Oblivia page",
+    description:
+      "A dry, arid region, so make sure to bring plenty of water. Vegetation is uncommon. Contains the ruins of an ancient civilization. Sandstorms are frequent. Try to avoid the endless pit to nowhere!",
+    neighboring_region: "Primordia (west)",
   },
   {
     id: "sylvalum",
     title: "Sylvalum",
-    description: "Sylvalum page",
+    description:
+      "Characterized by its white sand. Contains a lot of weird plants and trees, but that's Mira for you. Lots of people say it looks very pretty at night!",
+    neighboring_region: "Primordia (south), Cauldros (north)",
   },
   {
     id: "cauldros",
@@ -34,3 +42,5 @@ var PAGE_CONTENTS_DATA = [
     neighboring_region: "Sylvalum (south)",
   },
 ];
+
+export default PAGE_CONTENTS_DATA;
