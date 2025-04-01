@@ -1,5 +1,5 @@
 import React from "react";
-import ObliviaContent from "../components/page-contents/oblivia-page/ObliviaContent";
+import ObliviaContent from "../../components/page-contents/destinations-page/ObliviaContent";
 
 function Oblivia() {
   return (

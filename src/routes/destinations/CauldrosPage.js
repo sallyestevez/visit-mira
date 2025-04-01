@@ -1,5 +1,5 @@
 import React from "react";
-import CauldrosContent from "../components/page-contents/cauldros-page/CauldrosContent";
+import CauldrosContent from "../../components/page-contents/destinations-page/CauldrosContent";
 
 function Cauldros() {
   return (

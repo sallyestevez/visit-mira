@@ -8,24 +8,19 @@ function NavBar() {
         <div className="home-link">
           <Link to="/">Visit Mira</Link>
         </div>
-        <div className="regions-link">
-          <ul>
-            <li>
-              <Link to="/primordia">Primordia</Link>
-            </li>
-            <li>
-              <Link to="/noctilum">Noctilum</Link>
-            </li>
-            <li>
-              <Link to="/oblivia">Oblivia</Link>
-            </li>
-            <li>
-              <Link to="/sylvalum">Sylvalum</Link>
-            </li>
-            <li>
-              <Link to="/cauldros">Cauldros</Link>
-            </li>
-          </ul>
+        <div className="nav-page-links">
+          <p>
+            <Link to="/NLA">New LA</Link>
+          </p>
+          <p>
+            <Link to="/destinations">Destinations</Link>
+          </p>
+          <p>
+            <Link to="/guides">Guides</Link>
+          </p>
+          <p>
+            <Link to="/FAQs">FAQs</Link>
+          </p>
         </div>
       </div>
     </nav>

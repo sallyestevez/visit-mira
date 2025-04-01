@@ -1,5 +1,5 @@
 import React from "react";
-import HomeContent from "../components/page-contents/home-page/HomeContent";
+import HomeContent from "../components/page-contents/HomeContent";
 
 function Home() {
   return (

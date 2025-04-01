@@ -1,5 +1,5 @@
 import React from "react";
-import NoctilumContent from "../components/page-contents/noctilum-page/NoctilumContent";
+import NoctilumContent from "../../components/page-contents/destinations-page/NoctilumContent";
 
 function Noctilum() {
   return (

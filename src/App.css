@@ -11,45 +11,93 @@ html {
   padding: 0;
   margin: 0;
   height: 100%;
-  background-color: #4b8895;
-  font-family: "Jost", sans-serif;
+  background-color: #55a8aa;
+  color: #0a0d0f;
+  font-family: "Roboto", sans-serif;
 }
 
 .page-wrapper {
   margin: 0 auto;
   max-width: 1200vw;
-  padding: 16px;
+  padding: 24px;
   width: auto;
 }
 
 .navbar {
-  background-color: #55a8aa;
-  font-size: 16px;
+  background-color: #0a0d0f;
+  font-family: "Jost", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  height: 84px;
 }
 
 .container {
   align-items: center;
   display: flex;
-  height: 100%;
-  justify-content: space-between;
-  margin: 0 auto;
-  max-width: 1080px;
-  padding: 0 16px;
+  gap: auto;
+  height: 80px;
+  justify-content: center;
+  padding: 24px 48px;
+  text-decoration: none;
+  width: auto;
 }
 
 .home-link {
-  width: 30%;
+  width: 50%;
   display: flex;
-  padding-left: 20px;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 36px;
   justify-content: flex-start;
 }
 
-.regions-link {
-  width: 70%;
-}
-
-.regions-link ul {
+.nav-page-links {
+  width: 50%;
   display: flex;
   justify-content: space-between;
-  list-style: none;
+  align-items: center;
+  gap: 40px;
 }
+
+.home-link a,
+.nav-page-links a {
+  color: #7fcbca;
+  text-decoration: none;
+}
+
+.home-link a:hover,
+.nav-page-links a:hover {
+  text-decoration: underline;
+  color: #81aab5;
+}
+
+.footer-page-links {
+  align-items: center;
+  background-color: #0a0d0f;
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  padding: 48px 60px;
+  width: auto;
+}
+
+.footer-page-links p {
+  color: #7fcbca;
+  text-decoration: none;
+}
+
+.footer-page-links p:hover {
+  color: #81aab5;
+  text-decoration: underline;
+}
+
+/* .footer-page-links a {
+  color: #7fcbca;
+  text-decoration: none;
+}
+
+.footer-page-links a:hover {
+  color: #81aab5;
+  text-decoration: underline;
+} */

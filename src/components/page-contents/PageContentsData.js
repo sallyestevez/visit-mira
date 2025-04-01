@@ -11,7 +11,7 @@ var PAGE_CONTENTS_DATA = [
     description:
       'Surrounded by grassy plains, mountains, and beaches. Primordia is a very "welcoming" region with tons of locations to explore, and lots of wildlife to encounter. New Los Angeles (NLA) is located here.',
     neighboring_region:
-      "Primordia (northwest), Oblivia (east), Sylvalum (north)",
+      "Noctilum (northwest), Oblivia (east), Sylvalum (north)",
   },
   {
     id: "noctilum",

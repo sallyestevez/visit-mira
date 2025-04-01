@@ -1,5 +1,5 @@
 import React from "react";
-import SylvalumContent from "../components/page-contents/sylvalum-page/SylvalumContent";
+import SylvalumContent from "../../components/page-contents/destinations-page/SylvalumContent";
 
 function Sylvalum() {
   return (
