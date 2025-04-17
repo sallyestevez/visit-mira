@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/visit-mira/static/css/main.7a936187.css",
-    "main.js": "/visit-mira/static/js/main.6aa277ec.js",
+    "main.css": "/visit-mira/static/css/main.99eedd41.css",
+    "main.js": "/visit-mira/static/js/main.6fa1aaa3.js",
     "static/js/453.c68368c3.chunk.js": "/visit-mira/static/js/453.c68368c3.chunk.js",
+    "static/media/Mira.png": "/visit-mira/static/media/Mira.3910f7bd6056ab0b4d42.png",
     "index.html": "/visit-mira/index.html",
-    "main.7a936187.css.map": "/visit-mira/static/css/main.7a936187.css.map",
-    "main.6aa277ec.js.map": "/visit-mira/static/js/main.6aa277ec.js.map",
+    "main.99eedd41.css.map": "/visit-mira/static/css/main.99eedd41.css.map",
+    "main.6fa1aaa3.js.map": "/visit-mira/static/js/main.6fa1aaa3.js.map",
     "453.c68368c3.chunk.js.map": "/visit-mira/static/js/453.c68368c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7a936187.css",
-    "static/js/main.6aa277ec.js"
+    "static/css/main.99eedd41.css",
+    "static/js/main.6fa1aaa3.js"
   ]
 }
