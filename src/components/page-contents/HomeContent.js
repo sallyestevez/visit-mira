@@ -18,8 +18,9 @@ function HomeContent() {
         <p>
           Are you tired of old planet Earth? Do you want some excitement in your
           life? Do you want to start your life over somewhere else? If so, come
-          over to Mira! Trust us, you've never seen anything like this!
+          over to Mira!
         </p>
+        <p>Trust us, you've never seen anything like this!</p>
       </div>
       <div className="nla-section home-section">
         <div className="home-section-title">
