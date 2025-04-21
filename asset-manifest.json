@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/visit-mira/static/css/main.99eedd41.css",
-    "main.js": "/visit-mira/static/js/main.2b226486.js",
+    "main.css": "/visit-mira/static/css/main.a998798f.css",
+    "main.js": "/visit-mira/static/js/main.72fb848f.js",
     "static/js/453.c68368c3.chunk.js": "/visit-mira/static/js/453.c68368c3.chunk.js",
     "static/media/Mira.png": "/visit-mira/static/media/Mira.3910f7bd6056ab0b4d42.png",
+    "static/media/Primordia.jpg": "/visit-mira/static/media/Primordia.e9416023aeb7d6fb8fb6.jpg",
+    "static/media/New_Los_Angeles.jpg": "/visit-mira/static/media/New_Los_Angeles.eb48c8f4d93b1aa85a09.jpg",
+    "static/media/Noctilum.jpg": "/visit-mira/static/media/Noctilum.6d5ca4caab840c23ee2c.jpg",
+    "static/media/Cauldros.jpg": "/visit-mira/static/media/Cauldros.7a65aab083331d8abbc8.jpg",
+    "static/media/Oblivia.jpg": "/visit-mira/static/media/Oblivia.c7d345faab2c4f2790b5.jpg",
+    "static/media/Sylvalum.jpg": "/visit-mira/static/media/Sylvalum.5bd6f954d8e494cd313d.jpg",
     "index.html": "/visit-mira/index.html",
-    "main.99eedd41.css.map": "/visit-mira/static/css/main.99eedd41.css.map",
-    "main.2b226486.js.map": "/visit-mira/static/js/main.2b226486.js.map",
+    "main.a998798f.css.map": "/visit-mira/static/css/main.a998798f.css.map",
+    "main.72fb848f.js.map": "/visit-mira/static/js/main.72fb848f.js.map",
     "453.c68368c3.chunk.js.map": "/visit-mira/static/js/453.c68368c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.99eedd41.css",
-    "static/js/main.2b226486.js"
+    "static/css/main.a998798f.css",
+    "static/js/main.72fb848f.js"
   ]
 }
