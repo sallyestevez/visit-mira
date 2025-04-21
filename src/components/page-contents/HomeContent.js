@@ -1,26 +1,29 @@
-import React from "react";
-import Mira from "../images/home/Mira.png";
+import React, { useState } from "react";
+
+import DestinationDescriptionData from "./page-data/destinations/DestinationDescriptionData";
+import CustomerReviewsData from "./page-data/CustomerReviewsData";
 
 function HomeContent() {
+  const [review] = useState(CustomerReviewsData);
   return (
     <div className="home-content">
       <div className="welcome-banner">
         <div className="home-title">
-          <h1>Welcome to Mira</h1>
+          <h1>{DestinationDescriptionData[0].title}</h1>
           <p>Mira is a brand-new destination for those who love adventure.</p>
         </div>
         <div className="home-image">
-          <img src={Mira} alt="Mira main art" loading="lazy" />
+          <img
+            src={DestinationDescriptionData[0].img}
+            alt={DestinationDescriptionData[0].img_alt}
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="mira-description">
         <h2>We're Stuck on a Different Planet</h2>
-        <p>
-          Are you tired of old planet Earth? Do you want some excitement in your
-          life? Do you want to start your life over somewhere else? If so, come
-          over to Mira!
-        </p>
-        <p>Trust us, you've never seen anything like this!</p>
+        <p>{DestinationDescriptionData[0].description}</p>
+        <p>{DestinationDescriptionData[0].description2}</p>
       </div>
       <div className="nla-section home-section">
         <div className="home-section-title">
@@ -29,8 +32,15 @@ function HomeContent() {
         </div>
 
         <div className="nla-image">
-          <img className="nla-home-image" alt="NLA scenery"></img>
-          <div className="nla-description">New LA</div>
+          <img
+            className="nla-home-image"
+            src={DestinationDescriptionData[1].img}
+            alt={DestinationDescriptionData[1].img_alt}
+            loading="lazy"
+          />
+          <div className="nla-description">
+            {DestinationDescriptionData[1].title}
+          </div>
         </div>
       </div>
       <div className="featured-destinations-section home-section">
@@ -42,33 +52,26 @@ function HomeContent() {
           <div className="destination primordia-home">
             <img
               className="destination-image primordia-home-image"
-              alt="Primordia scenery"
+              src={DestinationDescriptionData[2].img}
+              alt={DestinationDescriptionData[2].img_alt}
             ></img>
             <div className="destination-description primordia-description">
-              Primordia
+              {DestinationDescriptionData[2].title}
             </div>
           </div>
           <div className="destination noctilum-home">
             <img
               className="destination-image noctilum-home-image"
-              alt="Noctilum scenery"
+              src={DestinationDescriptionData[3].img}
+              alt={DestinationDescriptionData[3].img_alt}
             ></img>
             <div className="destination-description noctilum-description">
-              Noctilum
-            </div>
-          </div>
-          <div className="destination oblivia-home">
-            <img
-              className="destination-image oblivia-home-image"
-              alt="Oblivia scenery"
-            ></img>
-            <div className="destination-description oblivia-description">
-              Oblivia
+              {DestinationDescriptionData[3].title}
             </div>
           </div>
         </div>
       </div>
-      <div className="travel-guides home-section">
+      {/* <div className="travel-guides home-section">
         <div className="home-section-title">
           <h2>Travel Guides</h2>
           <p>Learn more to prepare for your trip.</p>
@@ -103,19 +106,39 @@ function HomeContent() {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="customer-reviews home-section">
         <div className="home-section-title">
           <h2>Customer Reviews</h2>
           <p>See what our visitors have to say.</p>
         </div>
+        <div className="customer-reviews-list">
+          {review.map((Val) => {
+            return (
+              <div className="customer-review">
+                <div className="customer-info">
+                  <div className="customer-img-name">
+                    <div className="customer-image">
+                      <img src={Val.img} alt={Val.img_alt} loading="lazy" />
+                    </div>
+                    <div className="customer-name">{Val.name}</div>
+                  </div>
+                  <div className="customer-rating">
+                    <p className="rating-stars">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+                <div className="review-text">{Val.review}</div>
+              </div>
+            );
+          })}
+        </div>
       </div>
-      <div className="frequently-asked-questions home-section">
+      {/* <div className="frequently-asked-questions home-section">
         <div className="home-section-title">
           <h2>FAQs</h2>
           <p>Do you have any questions regarding your stay?</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

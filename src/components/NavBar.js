@@ -15,12 +15,12 @@ function NavBar() {
           <p>
             <Link to="/destinations">Destinations</Link>
           </p>
-          <p>
+          {/* <p>
             <Link to="/guides">Guides</Link>
           </p>
           <p>
             <Link to="/FAQs">FAQs</Link>
-          </p>
+          </p> */}
         </div>
       </div>
     </nav>
