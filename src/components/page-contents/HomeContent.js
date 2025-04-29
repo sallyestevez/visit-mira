@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 import DestinationDescriptionData from "./page-data/destinations/DestinationDescriptionData";
 import CustomerReviewsData from "./page-data/CustomerReviewsData";
@@ -27,48 +28,63 @@ function HomeContent() {
       </div>
       <div className="nla-section home-section">
         <div className="home-section-title">
-          <h2>New Los Angeles</h2>
+          <Link to={`/NLA`} onClick={() => window.scrollTo(0, 0)}>
+            <h2>New Los Angeles</h2>
+          </Link>
           <p>Find out where you'll be staying while on Mira.</p>
         </div>
-
-        <div className="nla-image">
-          <img
-            className="nla-home-image"
-            src={DestinationDescriptionData[1].img}
-            alt={DestinationDescriptionData[1].img_alt}
-            loading="lazy"
-          />
-          <div className="nla-description">
-            {DestinationDescriptionData[1].title}
+        <Link to={`/NLA`} onClick={() => window.scrollTo(0, 0)}>
+          <div className="nla-image">
+            <img
+              className="nla-home-image"
+              src={DestinationDescriptionData[1].img}
+              alt={DestinationDescriptionData[1].img_alt}
+              loading="lazy"
+            />
+            <div className="nla-description">
+              {DestinationDescriptionData[1].title}
+            </div>
           </div>
-        </div>
+        </Link>
       </div>
       <div className="featured-destinations-section home-section">
         <div className="home-section-title">
-          <h2>Featured Destinations</h2>
+          <Link to={`/destinations`} onClick={() => window.scrollTo(0, 0)}>
+            <h2>Featured Destinations</h2>
+          </Link>
           <p>Discover Mira's diverse regions.</p>
         </div>
         <div className="destinations-list">
-          <div className="destination primordia-home">
-            <img
-              className="destination-image primordia-home-image"
-              src={DestinationDescriptionData[2].img}
-              alt={DestinationDescriptionData[2].img_alt}
-            ></img>
-            <div className="destination-description primordia-description">
-              {DestinationDescriptionData[2].title}
+          <Link
+            to={`/destinations/primordia`}
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <div className="destination primordia-home">
+              <img
+                className="destination-image primordia-home-image"
+                src={DestinationDescriptionData[2].img}
+                alt={DestinationDescriptionData[2].img_alt}
+              ></img>
+              <div className="destination-description primordia-description">
+                {DestinationDescriptionData[2].title}
+              </div>
             </div>
-          </div>
-          <div className="destination noctilum-home">
-            <img
-              className="destination-image noctilum-home-image"
-              src={DestinationDescriptionData[3].img}
-              alt={DestinationDescriptionData[3].img_alt}
-            ></img>
-            <div className="destination-description noctilum-description">
-              {DestinationDescriptionData[3].title}
+          </Link>
+          <Link
+            to={`/destinations/noctilum`}
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <div className="destination noctilum-home">
+              <img
+                className="destination-image noctilum-home-image"
+                src={DestinationDescriptionData[3].img}
+                alt={DestinationDescriptionData[3].img_alt}
+              ></img>
+              <div className="destination-description noctilum-description">
+                {DestinationDescriptionData[3].title}
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
       {/* <div className="travel-guides home-section">
