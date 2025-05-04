@@ -4,27 +4,30 @@ import { Link } from "react-router-dom";
 import DestinationDescriptionData from "./page-data/destinations/DestinationDescriptionData";
 import CustomerReviewsData from "./page-data/CustomerReviewsData";
 
+import Mira from "../images/home/Mira.png";
+import NewLosAngeles from "../images/nla/New_Los_Angeles.jpg";
+
 function HomeContent() {
   const [review] = useState(CustomerReviewsData);
   return (
     <div className="home-content">
       <div className="welcome-banner">
         <div className="home-title">
-          <h1>{DestinationDescriptionData[0].title}</h1>
+          <h1>Welcome to Mira</h1>
           <p>Mira is a brand-new destination for those who love adventure.</p>
         </div>
         <div className="home-image">
-          <img
-            src={DestinationDescriptionData[0].img}
-            alt={DestinationDescriptionData[0].img_alt}
-            loading="lazy"
-          />
+          <img src={Mira} alt="Mira scenery" loading="lazy" />
         </div>
       </div>
       <div className="mira-description">
         <h2>We're Stuck on a Different Planet</h2>
-        <p>{DestinationDescriptionData[0].description}</p>
-        <p>{DestinationDescriptionData[0].description2}</p>
+        <p>
+          Are you tired of old planet Earth? Do you want some excitement in your
+          life? Do you want to start your life over somewhere else? If so, come
+          over to Mira!
+        </p>
+        <p>Trust us, you've never seen anything like this!</p>
       </div>
       <div className="nla-section home-section">
         <div className="home-section-title">
@@ -37,13 +40,11 @@ function HomeContent() {
           <div className="nla-image">
             <img
               className="nla-home-image"
-              src={DestinationDescriptionData[1].img}
-              alt={DestinationDescriptionData[1].img_alt}
+              src={NewLosAngeles}
+              alt="New Los Angeles overview"
               loading="lazy"
             />
-            <div className="nla-description">
-              {DestinationDescriptionData[1].title}
-            </div>
+            <div className="nla-description">New Los Angeles</div>
           </div>
         </Link>
       </div>
@@ -62,11 +63,11 @@ function HomeContent() {
             <div className="destination primordia-home">
               <img
                 className="destination-image primordia-home-image"
-                src={DestinationDescriptionData[2].img}
-                alt={DestinationDescriptionData[2].img_alt}
+                src={DestinationDescriptionData[0].img}
+                alt={DestinationDescriptionData[0].img_alt}
               ></img>
               <div className="destination-description primordia-description">
-                {DestinationDescriptionData[2].title}
+                {DestinationDescriptionData[0].title}
               </div>
             </div>
           </Link>
@@ -77,11 +78,11 @@ function HomeContent() {
             <div className="destination noctilum-home">
               <img
                 className="destination-image noctilum-home-image"
-                src={DestinationDescriptionData[3].img}
-                alt={DestinationDescriptionData[3].img_alt}
+                src={DestinationDescriptionData[1].img}
+                alt={DestinationDescriptionData[1].img_alt}
               ></img>
               <div className="destination-description noctilum-description">
-                {DestinationDescriptionData[3].title}
+                {DestinationDescriptionData[1].title}
               </div>
             </div>
           </Link>

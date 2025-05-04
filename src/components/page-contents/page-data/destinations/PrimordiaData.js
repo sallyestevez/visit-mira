@@ -15,7 +15,7 @@ import StonelatticeCavern from "../../../images/destinations/primordia/Stonelatt
 import TurtleNest from "../../../images/destinations/primordia/TurtleNest.jpg";
 import UnicornRock from "../../../images/destinations/primordia/Unicorn_Rock.jpg";
 
-var PRIMORDIA_DATA = [
+var PrimordiaData = [
   {
     id: "biahno-hills",
     title: "Biahno Hills",
@@ -114,4 +114,4 @@ var PRIMORDIA_DATA = [
   },
 ];
 
-export default PRIMORDIA_DATA;
+export default PrimordiaData;
