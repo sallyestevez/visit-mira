@@ -15,9 +15,9 @@ function NLAContent() {
           backgroundImage={NewLosAngeles}
         />
       </div>
-      <div className="destination-description">
+      <div className="nla-page-description">
         <p>
-          This location is based on the city of Los Angeles on Earh. It is
+          This location is based on the city of Los Angeles on Earth. It is
           separated into four districts: Administrative, Commercial, Industrial,
           and Residential.
         </p>
@@ -27,11 +27,11 @@ function NLAContent() {
           and Industrial Districts are off-limits to visitors.
         </p>
       </div>
-      <div className="destinations-list nla-districts">
+      <div className="locations-list nla-districts">
         {NLADistricts.map((district) => {
           return (
             <div className="destination-card" key={district.id}>
-              <div className="destination-card-title">{district.title}</div>
+              <h2 className="destination-card-title">{district.title}</h2>
               <div className="destination-card-image">
                 <img src={district.img} alt={district.img_alt} loading="lazy" />
               </div>
