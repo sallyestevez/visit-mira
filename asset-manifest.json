@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/visit-mira/static/css/main.16513b69.css",
-    "main.js": "/visit-mira/static/js/main.ecf7e3ab.js",
+    "main.css": "/visit-mira/static/css/main.afc1508b.css",
+    "main.js": "/visit-mira/static/js/main.74a8d5aa.js",
     "static/js/453.c68368c3.chunk.js": "/visit-mira/static/js/453.c68368c3.chunk.js",
     "static/media/Mira.png": "/visit-mira/static/media/Mira.3910f7bd6056ab0b4d42.png",
     "static/media/Primordia.jpg": "/visit-mira/static/media/Primordia.e9416023aeb7d6fb8fb6.jpg",
@@ -15,12 +15,12 @@
     "static/media/IndustrialDistrict.png": "/visit-mira/static/media/IndustrialDistrict.9e6d4e84e856db24cab7.png",
     "static/media/CommercialDistrict.png": "/visit-mira/static/media/CommercialDistrict.90a35c926582bf885cc8.png",
     "index.html": "/visit-mira/index.html",
-    "main.16513b69.css.map": "/visit-mira/static/css/main.16513b69.css.map",
-    "main.ecf7e3ab.js.map": "/visit-mira/static/js/main.ecf7e3ab.js.map",
+    "main.afc1508b.css.map": "/visit-mira/static/css/main.afc1508b.css.map",
+    "main.74a8d5aa.js.map": "/visit-mira/static/js/main.74a8d5aa.js.map",
     "453.c68368c3.chunk.js.map": "/visit-mira/static/js/453.c68368c3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.16513b69.css",
-    "static/js/main.ecf7e3ab.js"
+    "static/css/main.afc1508b.css",
+    "static/js/main.74a8d5aa.js"
   ]
 }
