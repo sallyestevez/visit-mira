@@ -1,0 +1,185 @@
+"use client";
+import React, { useState } from "react";
+import Image from "next/image";
+import Link from "next/link";
+
+import DestinationDescriptionData from "@/components/page-data/destinations/DestinationDescriptionData";
+import CustomerReviewsData from "@/components/page-data/CustomerReviewsData";
+
+import Mira from "@/images/home/Mira.png";
+import NewLosAngeles from "@/images/nla/New_Los_Angeles.jpg";
+
+function HomeContent() {
+  const [review] = useState(CustomerReviewsData);
+  return (
+    <div className="home-content">
+      <div className="welcome-banner">
+        <div className="home-title">
+          <h1>Welcome to Mira</h1>
+          <p>Mira is a brand-new destination for those who love adventure.</p>
+        </div>
+        <div className="home-image">
+          <Image
+            src={Mira}
+            width={720}
+            height={400}
+            alt="Mira scenery"
+            loading="lazy"
+          />
+        </div>
+      </div>
+      <div className="mira-description">
+        <h2>We're Stuck on a Different Planet</h2>
+        <p>
+          Are you tired of old planet Earth? Do you want some excitement in your
+          life? Do you want to start your life over somewhere else? If so, come
+          over to Mira!
+        </p>
+        <p>Trust us, you've never seen anything like this!</p>
+      </div>
+      <div className="nla-section home-section">
+        <div className="home-section-title">
+          <Link href="/NLA" onClick={() => window.scrollTo(0, 0)}>
+            <h2>New Los Angeles</h2>
+          </Link>
+          <p>Find out where you'll be staying while on Mira.</p>
+        </div>
+        <Link href="/NLA" onClick={() => window.scrollTo(0, 0)}>
+          <div className="nla-image">
+            <Image
+              className="nla-home-image"
+              width={720}
+              height={400}
+              src={NewLosAngeles}
+              alt="New Los Angeles overview"
+              loading="lazy"
+            />
+            <div className="nla-description">New Los Angeles</div>
+          </div>
+        </Link>
+      </div>
+      <div className="featured-destinations-section home-section">
+        <div className="home-section-title">
+          <Link href="/destinations" onClick={() => window.scrollTo(0, 0)}>
+            <h2>Featured Destinations</h2>
+          </Link>
+          <p>Discover Mira's diverse regions.</p>
+        </div>
+        <div className="destinations-list">
+          <Link
+            href="/destinations/primordia"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <div className="destination primordia-home">
+              <Image
+                className="destination-image primordia-home-image"
+                width={720}
+                height={400}
+                src={DestinationDescriptionData[0].img}
+                alt={DestinationDescriptionData[0].img_alt}
+              />
+              <div className="destination-description primordia-description">
+                {DestinationDescriptionData[0].title}
+              </div>
+            </div>
+          </Link>
+          <Link
+            href="/destinations/noctilum"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <div className="destination noctilum-home">
+              <Image
+                className="destination-image noctilum-home-image"
+                width={720}
+                height={400}
+                src={DestinationDescriptionData[1].img}
+                alt={DestinationDescriptionData[1].img_alt}
+              />
+              <div className="destination-description noctilum-description">
+                {DestinationDescriptionData[1].title}
+              </div>
+            </div>
+          </Link>
+        </div>
+      </div>
+      {/* <div className="travel-guides home-section">
+        <div className="home-section-title">
+          <h2>Travel Guides</h2>
+          <p>Learn more to prepare for your trip.</p>
+        </div>
+        <div className="article-list">
+          <div className="article">
+            <img className="article-image" alt="Travel guide article"></img>
+            <div className="article-text">
+              <p className="article-title">Article Title</p>
+              <p className="article-desc">Article Description</p>
+            </div>
+          </div>
+          <div className="article">
+            <img className="article-image" alt="Travel guide article"></img>
+            <div className="article-text">
+              <p className="article-title">Article Title</p>
+              <p className="article-desc">Article Description</p>
+            </div>
+          </div>
+          <div className="article">
+            <img className="article-image" alt="Travel guide article"></img>
+            <div className="article-text">
+              <p className="article-title">Article Title</p>
+              <p className="article-desc">Article Description</p>
+            </div>
+          </div>
+          <div className="article">
+            <img className="article-image" alt="Travel guide article"></img>
+            <div className="article-text">
+              <p className="article-title">Article Title</p>
+              <p className="article-desc">Article Description</p>
+            </div>
+          </div>
+        </div>
+      </div> */}
+      <div className="customer-reviews home-section">
+        <div className="home-section-title">
+          <h2>Customer Reviews</h2>
+          <p>See what our visitors have to say.</p>
+        </div>
+        <div className="customer-reviews-list">
+          {review.map((Val) => {
+            return (
+              <div key={Val.id} className="customer-review">
+                <div className="customer-info">
+                  <div className="customer-img-name">
+                    <div className="customer-image">
+                      <Image src={Val.img} alt={Val.img_alt} loading="lazy" />
+                    </div>
+                    <div className="customer-name">{Val.name}</div>
+                  </div>
+                  <div className="customer-rating">
+                    <p className="rating-stars">⭐⭐⭐⭐⭐</p>
+                  </div>
+                </div>
+                <div className="review-text">{Val.review}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+      {/* <div className="frequently-asked-questions home-section">
+        <div className="home-section-title">
+          <h2>FAQs</h2>
+          <p>Do you have any questions regarding your stay?</p>
+        </div>
+      </div> */}
+    </div>
+  );
+}
+
+export default function Home() {
+  return (
+    <div className="home">
+      <div className="home-content">
+        <HomeContent />
+      </div>
+    </div>
+  );
+}
