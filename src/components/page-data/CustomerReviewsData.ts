@@ -1,7 +1,7 @@
-import HopeImg from "@/images/character-icons/Hope.png";
-import GwinImg from "@/images/character-icons/Gwin.png";
-import LinImg from "@/images/character-icons/Lin.png";
-import LaoImg from "@/images/character-icons/Lao.png";
+import HopeImg from "@/components/images/character-icons/Hope.png";
+import GwinImg from "@/components/images/character-icons/Gwin.png";
+import LinImg from "@/components/images/character-icons/Lin.png";
+import LaoImg from "@/components/images/character-icons/Lao.png";
 
 const CustomerReviewsData = [
   {

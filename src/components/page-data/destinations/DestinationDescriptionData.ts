@@ -1,8 +1,8 @@
-import Primordia from "@/images/destinations/primordia/Primordia.jpg";
-import Noctilum from "@/images/destinations/noctilum/Noctilum.jpg";
-import Oblivia from "@/images/destinations/oblivia/Oblivia.jpg";
-import Sylvalum from "@/images/destinations/sylvalum/Sylvalum.jpg";
-import Cauldros from "@/images/destinations/cauldros/Cauldros.jpg";
+import Primordia from "@/components/images/destinations/primordia/Primordia.jpg";
+import Noctilum from "@/components/images/destinations/noctilum/Noctilum.jpg";
+import Oblivia from "@/components/images/destinations/oblivia/Oblivia.jpg";
+import Sylvalum from "@/components/images/destinations/sylvalum/Sylvalum.jpg";
+import Cauldros from "@/components/images/destinations/cauldros/Cauldros.jpg";
 
 const DestinationDescriptionData = [
   {

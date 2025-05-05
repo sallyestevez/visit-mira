@@ -6,11 +6,11 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
+    "export": "next export",
     "start": "next start",
     "lint": "next lint",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "preview": "next build && next start"
+    "deploy": "next build && gh-pages -d out",
+    "preview": "next build && npx serve@latest out"
   },
   "dependencies": {
     "next": "15.3.1",

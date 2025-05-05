@@ -6,8 +6,8 @@ import Link from "next/link";
 import DestinationDescriptionData from "@/components/page-data/destinations/DestinationDescriptionData";
 import CustomerReviewsData from "@/components/page-data/CustomerReviewsData";
 
-import Mira from "@/images/home/Mira.png";
-import NewLosAngeles from "@/images/nla/New_Los_Angeles.jpg";
+import Mira from "@/components/images/home/Mira.png";
+import NewLosAngeles from "@/components/images/nla/New_Los_Angeles.jpg";
 
 function HomeContent() {
   const [review] = useState(CustomerReviewsData);
@@ -29,20 +29,20 @@ function HomeContent() {
         </div>
       </div>
       <div className="mira-description">
-        <h2>We're Stuck on a Different Planet</h2>
+        <h2>{"We're Stuck on a Different Planet"}</h2>
         <p>
           Are you tired of old planet Earth? Do you want some excitement in your
           life? Do you want to start your life over somewhere else? If so, come
           over to Mira!
         </p>
-        <p>Trust us, you've never seen anything like this!</p>
+        <p>{"Trust us, you've never seen anything like this!"}</p>
       </div>
       <div className="nla-section home-section">
         <div className="home-section-title">
           <Link href="/NLA" onClick={() => window.scrollTo(0, 0)}>
             <h2>New Los Angeles</h2>
           </Link>
-          <p>Find out where you'll be staying while on Mira.</p>
+          <p>{"Find out where you'll be staying while on Mira."}</p>
         </div>
         <Link href="/NLA" onClick={() => window.scrollTo(0, 0)}>
           <div className="nla-image">
@@ -63,7 +63,7 @@ function HomeContent() {
           <Link href="/destinations" onClick={() => window.scrollTo(0, 0)}>
             <h2>Featured Destinations</h2>
           </Link>
-          <p>Discover Mira's diverse regions.</p>
+          <p>{"Discover Mira's diverse regions."}</p>
         </div>
         <div className="destinations-list">
           <Link
