@@ -1,5 +1,6 @@
+"use client"
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import DestinationDescriptionData from "./page-data/destinations/DestinationDescriptionData";
 import CustomerReviewsData from "./page-data/CustomerReviewsData";
@@ -31,12 +32,12 @@ function HomeContent() {
       </div>
       <div className="nla-section home-section">
         <div className="home-section-title">
-          <Link to={`/NLA`} onClick={() => window.scrollTo(0, 0)}>
+          <Link href="/NLA" onClick={() => window.scrollTo(0, 0)}>
             <h2>New Los Angeles</h2>
           </Link>
           <p>Find out where you'll be staying while on Mira.</p>
         </div>
-        <Link to={`/NLA`} onClick={() => window.scrollTo(0, 0)}>
+        <Link href="/NLA" onClick={() => window.scrollTo(0, 0)}>
           <div className="nla-image">
             <img
               className="nla-home-image"
@@ -50,14 +51,14 @@ function HomeContent() {
       </div>
       <div className="featured-destinations-section home-section">
         <div className="home-section-title">
-          <Link to={`/destinations`} onClick={() => window.scrollTo(0, 0)}>
+          <Link href="/destinations" onClick={() => window.scrollTo(0, 0)}>
             <h2>Featured Destinations</h2>
           </Link>
           <p>Discover Mira's diverse regions.</p>
         </div>
         <div className="destinations-list">
           <Link
-            to={`/destinations/primordia`}
+            href="/destinations/primordia"
             onClick={() => window.scrollTo(0, 0)}
           >
             <div className="destination primordia-home">
@@ -72,7 +73,7 @@ function HomeContent() {
             </div>
           </Link>
           <Link
-            to={`/destinations/noctilum`}
+            href="/destinations/noctilum"
             onClick={() => window.scrollTo(0, 0)}
           >
             <div className="destination noctilum-home">
@@ -132,7 +133,7 @@ function HomeContent() {
         <div className="customer-reviews-list">
           {review.map((Val) => {
             return (
-              <div className="customer-review">
+              <div key={Val.id} className="customer-review">
                 <div className="customer-info">
                   <div className="customer-img-name">
                     <div className="customer-image">
