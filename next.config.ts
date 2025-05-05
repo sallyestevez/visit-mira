@@ -1,8 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/visit-mira',
+  output: "export",
+  basePath: "/visit-mira",
   images: {
     unoptimized: true,
   },

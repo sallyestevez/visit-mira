@@ -32,18 +32,6 @@ export default function RootLayout({
         <div className="App">
           <NavBar />
           {children}
-          {/* <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/NLA" element={<NLA />} />
-            <Route path="/destinations" element={<Destinations />} />
-            <Route path="/guides" element={<Guides />} />
-            <Route path="/FAQs" element={<FAQs />} />
-            <Route path="/destinations/primordia" element={<Primordia />} />
-            <Route path="/destinations/noctilum" element={<Noctilum />} />
-            <Route path="/destinations/oblivia" element={<Oblivia />} />
-            <Route path="/destinations/sylvalum" element={<Sylvalum />} />
-            <Route path="/destinations/cauldros" element={<Cauldros />} />
-          </Routes> */}
           <Footer />
         </div>
       </body>

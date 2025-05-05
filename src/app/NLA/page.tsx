@@ -5,7 +5,7 @@ import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import NLAData from "@/components/page-data/NLAData";
 
-import NewLosAngeles from "@/images/nla/New_Los_Angeles.jpg";
+import NewLosAngeles from "@/components/images/nla/New_Los_Angeles.jpg";
 
 function NLAContent() {
   const [NLADistricts] = useState(NLAData);
