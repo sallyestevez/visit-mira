@@ -4,10 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 import DestinationDescriptionData from "@/components/page-data/destinations/DestinationDescriptionData";
-import CustomerReviewsData from "../components/page-data/CustomerReviewsData";
+import CustomerReviewsData from "@/components/page-data/CustomerReviewsData";
 
-import Mira from "./images/home/Mira.png";
-import NewLosAngeles from "./images/nla/New_Los_Angeles.jpg";
+import Mira from "@/images/home/Mira.png";
+import NewLosAngeles from "@/images/nla/New_Los_Angeles.jpg";
 
 function HomeContent() {
   const [review] = useState(CustomerReviewsData);
@@ -19,7 +19,13 @@ function HomeContent() {
           <p>Mira is a brand-new destination for those who love adventure.</p>
         </div>
         <div className="home-image">
-          <Image src={Mira} alt="Mira scenery" loading="lazy" />
+          <Image
+            src={Mira}
+            width={720}
+            height={400}
+            alt="Mira scenery"
+            loading="lazy"
+          />
         </div>
       </div>
       <div className="mira-description">
@@ -42,6 +48,8 @@ function HomeContent() {
           <div className="nla-image">
             <Image
               className="nla-home-image"
+              width={720}
+              height={400}
               src={NewLosAngeles}
               alt="New Los Angeles overview"
               loading="lazy"
@@ -65,6 +73,8 @@ function HomeContent() {
             <div className="destination primordia-home">
               <Image
                 className="destination-image primordia-home-image"
+                width={720}
+                height={400}
                 src={DestinationDescriptionData[0].img}
                 alt={DestinationDescriptionData[0].img_alt}
               />
@@ -80,6 +90,8 @@ function HomeContent() {
             <div className="destination noctilum-home">
               <Image
                 className="destination-image noctilum-home-image"
+                width={720}
+                height={400}
                 src={DestinationDescriptionData[1].img}
                 alt={DestinationDescriptionData[1].img_alt}
               />

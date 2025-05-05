@@ -1,9 +1,9 @@
-import HopeImg from "../../images/character-icons/Hope.png";
-import GwinImg from "../../images/character-icons/Gwin.png";
-import LinImg from "../../images/character-icons/Lin.png";
-import LaoImg from "../../images/character-icons/Lao.png";
+import HopeImg from "@/images/character-icons/Hope.png";
+import GwinImg from "@/images/character-icons/Gwin.png";
+import LinImg from "@/images/character-icons/Lin.png";
+import LaoImg from "@/images/character-icons/Lao.png";
 
-var CustomerReviewsData = [
+const CustomerReviewsData = [
   {
     id: "review1",
     img: HopeImg,

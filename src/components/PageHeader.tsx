@@ -1,14 +1,25 @@
 import React from "react";
+import Image, { StaticImageData } from "next/image";
 
-function PageHeader({ pageTitle, backgroundImage }) {
+type PageHeaderProps = {
+  readonly pageTitle: string;
+  readonly backgroundImage: string | StaticImageData;
+};
+
+export default function PageHeader({
+  pageTitle,
+  backgroundImage,
+}: PageHeaderProps) {
   return (
-    <div
-      className="page-header"
-      style={{ backgroundImage: `url(${backgroundImage})` }}
-    >
-      <h1>{pageTitle}</h1>
+    <div className="page-header relative w-full overflow-hidden">
+      <Image
+        src={backgroundImage}
+        alt={`${pageTitle} Background`}
+        fill
+        className="object-cover object-center"
+        priority
+      />
+      <h1 className="z-10">{pageTitle}</h1>
     </div>
   );
 }
-
-export default PageHeader;

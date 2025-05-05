@@ -1,15 +1,15 @@
-import CauldrosThreshold from "../../../images/destinations/sylvalum/Threshold.jpg";
-import CleansingSpring from "../../../images/destinations/sylvalum/CleansingSpring.jpg";
-import DelusiansNorthSummit from "../../../images/destinations/sylvalum/Delusians_North_Summit.jpg";
-import GehennaSpan from "../../../images/destinations/sylvalum/GehennaSpan.jpg";
-import HilalMeadow from "../../../images/destinations/sylvalum/HilalMeadow.jpg";
-import LakeCiel from "../../../images/destinations/sylvalum/LakeCiel.jpg";
-import NoctilucentSphere from "../../../images/destinations/sylvalum/Noctilucent_sphere.jpg";
-import SandsprintSlope from "../../../images/destinations/sylvalum/Sandsprint_Slope.jpg";
-import SeabirdsBeak from "../../../images/destinations/sylvalum/SeabirdsBeak.jpg";
-import SouthHardheartCanyon from "../../../images/destinations/sylvalum/South_Hardheart_Canyon.jpg";
-import SouthernSearoad from "../../../images/destinations/sylvalum/SouthernSearoad.jpg";
-import WestCinderdunes from "../../../images/destinations/sylvalum/WestCinderdunes.jpg";
+import CauldrosThreshold from "@/images/destinations/sylvalum/Threshold.jpg";
+import CleansingSpring from "@/images/destinations/sylvalum/CleansingSpring.jpg";
+import DelusiansNorthSummit from "@/images/destinations/sylvalum/Delusians_North_Summit.jpg";
+import GehennaSpan from "@/images/destinations/sylvalum/GehennaSpan.jpg";
+import HilalMeadow from "@/images/destinations/sylvalum/HilalMeadow.jpg";
+import LakeCiel from "@/images/destinations/sylvalum/LakeCiel.jpg";
+import NoctilucentSphere from "@/images/destinations/sylvalum/Noctilucent_sphere.jpg";
+import SandsprintSlope from "@/images/destinations/sylvalum/Sandsprint_Slope.jpg";
+import SeabirdsBeak from "@/images/destinations/sylvalum/SeabirdsBeak.jpg";
+import SouthHardheartCanyon from "@/images/destinations/sylvalum/South_Hardheart_Canyon.jpg";
+import SouthernSearoad from "@/images/destinations/sylvalum/SouthernSearoad.jpg";
+import WestCinderdunes from "@/images/destinations/sylvalum/WestCinderdunes.jpg";
 
 const SylvalumData = [
   {

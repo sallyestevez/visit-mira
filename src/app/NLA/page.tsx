@@ -1,10 +1,11 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 
-import PageHeader from "../../components/PageHeader";
-import NLAData from "../../components/page-data/NLAData";
+import PageHeader from "@/components/PageHeader";
+import NLAData from "@/components/page-data/NLAData";
 
-// import NewLosAngeles from "../images/nla/New_Los_Angeles.jpg";
+import NewLosAngeles from "@/images/nla/New_Los_Angeles.jpg";
 
 function NLAContent() {
   const [NLADistricts] = useState(NLAData);
@@ -12,10 +13,10 @@ function NLAContent() {
     <div className="nla">
       <div className="destination-content">
         <div className="destination-header">
-          {/* <PageHeader
-          pageTitle="New Los Angeles"
-          backgroundImage={NewLosAngeles}
-        /> */}
+          <PageHeader
+            pageTitle="New Los Angeles"
+            backgroundImage={NewLosAngeles}
+          />
         </div>
         <div className="nla-page-description">
           <p>
@@ -30,16 +31,22 @@ function NLAContent() {
           </p>
         </div>
         <div className="locations-list nla-districts">
-          {/* {NLADistricts.map((district) => {
-          return (
-            <div className="destination-card" key={district.id}>
-              <h2 className="destination-card-title">{district.title}</h2>
-              <div className="destination-card-image">
-                <img src={district.img} alt={district.img_alt} loading="lazy" />
+          {NLADistricts.map((district) => {
+            return (
+              <div className="destination-card" key={district.id}>
+                <h2 className="destination-card-title">{district.title}</h2>
+                <div className="destination-card-image">
+                  <Image
+                    src={district.img}
+                    width={720}
+                    height={400}
+                    alt={district.img_alt}
+                    loading="lazy"
+                  />
+                </div>
               </div>
-            </div>
-          );
-        })} */}
+            );
+          })}
         </div>
       </div>
     </div>

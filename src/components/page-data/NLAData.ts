@@ -1,9 +1,9 @@
-import AdministrativeDistrict from "../../images/nla/ArmoryAlley.jpg";
-import CommercialDistrict from "../../images/nla/CommercialDistrict.png";
-import IndustrialDistrict from "../../images/nla/IndustrialDistrict.png";
-import ResidentialDistrict from "../../images/nla/ResidentialDistrict.jpg";
+import AdministrativeDistrict from "@/images/nla/ArmoryAlley.jpg";
+import CommercialDistrict from "@/images/nla/CommercialDistrict.png";
+import IndustrialDistrict from "@/images/nla/IndustrialDistrict.png";
+import ResidentialDistrict from "@/images/nla/ResidentialDistrict.jpg";
 
-var NLAData = [
+const NLAData = [
   {
     id: "administrative-district",
     title: "Administrative District",

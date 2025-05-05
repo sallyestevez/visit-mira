@@ -1,12 +1,12 @@
-import DragonbonePromontory from "../../../images/destinations/cauldros/DragonbonePromontory.jpg";
-import GnahanVilla from "../../../images/destinations/cauldros/Gnahan_Villa.jpg";
-import InfernalLedges from "../../../images/destinations/cauldros/InfernalLedges.jpg";
-import MountMgando from "../../../images/destinations/cauldros/MountMgando.jpg";
-import OrrhSimCapitalRemains from "../../../images/destinations/cauldros/Orrh_Sim_Capital_Remains.jpg";
-import RuinedCity from "../../../images/destinations/cauldros/Ruined_City.jpg";
-import SunsetFalls from "../../../images/destinations/cauldros/SunsetFalls.jpg";
-import TengusPlayground from "../../../images/destinations/cauldros/TengusPlayground.jpg";
-import TphnomShelf from "../../../images/destinations/cauldros/TphnomShelf.jpg";
+import DragonbonePromontory from "@/images/destinations/cauldros/DragonbonePromontory.jpg";
+import GnahanVilla from "@/images/destinations/cauldros/Gnahan_Villa.jpg";
+import InfernalLedges from "@/images/destinations/cauldros/InfernalLedges.jpg";
+import MountMgando from "@/images/destinations/cauldros/MountMgando.jpg";
+import OrrhSimCapitalRemains from "@/images/destinations/cauldros/Orrh_Sim_Capital_Remains.jpg";
+import RuinedCity from "@/images/destinations/cauldros/Ruined_City.jpg";
+import SunsetFalls from "@/images/destinations/cauldros/SunsetFalls.jpg";
+import TengusPlayground from "@/images/destinations/cauldros/TengusPlayground.jpg";
+import TphnomShelf from "@/images/destinations/cauldros/TphnomShelf.jpg";
 
 const CauldrosData = [
   {
