@@ -1,5 +1,5 @@
 import React from "react";
-import GuidesContent from "../../components/page-contents/guides-pages/GuidesContent";
+import GuidesContent from "./GuidesContent";
 
 function Guides() {
   return (

@@ -16,7 +16,7 @@ import RedsnakePass from "../../../images/destinations/noctilum/RedsnakePass.jpg
 import RustpoolBanks from "../../../images/destinations/noctilum/RustpoolBanks.jpg";
 import WhalesWeeper from "../../../images/destinations/noctilum/WhalesWeeper.jpg";
 
-var NoctilumData = [
+const NoctilumData = [
   {
     id: "bident-crossing",
     title: "Bident Crossing",

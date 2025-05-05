@@ -1,6 +1,6 @@
 import React from "react";
 
-function Footer() {
+export default function Footer() {
   return (
     <nav className="footer">
       <div className="footer-page-links">
@@ -12,5 +12,3 @@ function Footer() {
     </nav>
   );
 }
-
-export default Footer;

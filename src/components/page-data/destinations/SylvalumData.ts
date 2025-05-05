@@ -11,7 +11,7 @@ import SouthHardheartCanyon from "../../../images/destinations/sylvalum/South_Ha
 import SouthernSearoad from "../../../images/destinations/sylvalum/SouthernSearoad.jpg";
 import WestCinderdunes from "../../../images/destinations/sylvalum/WestCinderdunes.jpg";
 
-var SylvalumData = [
+const SylvalumData = [
   {
     id: "cauldros-threshold",
     title: "Cauldros Threshold",

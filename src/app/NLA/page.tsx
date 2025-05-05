@@ -2,7 +2,7 @@
 import React, { useState } from "react";
 
 import PageHeader from "../../components/PageHeader";
-import NLAData from "../../components/page-contents/page-data/NLAData";
+import NLAData from "../../components/page-data/NLAData";
 
 // import NewLosAngeles from "../images/nla/New_Los_Angeles.jpg";
 

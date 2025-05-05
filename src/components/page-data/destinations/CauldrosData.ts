@@ -8,7 +8,7 @@ import SunsetFalls from "../../../images/destinations/cauldros/SunsetFalls.jpg";
 import TengusPlayground from "../../../images/destinations/cauldros/TengusPlayground.jpg";
 import TphnomShelf from "../../../images/destinations/cauldros/TphnomShelf.jpg";
 
-var CauldrosData = [
+const CauldrosData = [
   {
     id: "dragonbone-promontory",
     title: "Dragonbone Promontory",

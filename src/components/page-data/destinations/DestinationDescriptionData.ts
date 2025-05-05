@@ -4,7 +4,7 @@ import Oblivia from "../../../images/destinations/oblivia/Oblivia.jpg";
 import Sylvalum from "../../../images/destinations/sylvalum/Sylvalum.jpg";
 import Cauldros from "../../../images/destinations/cauldros/Cauldros.jpg";
 
-var DestinationDescriptionData = [
+const DestinationDescriptionData = [
   {
     id: "primordia",
     title: "Primordia",

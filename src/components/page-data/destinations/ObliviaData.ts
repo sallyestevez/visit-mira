@@ -13,7 +13,7 @@ import SandbankRuins from "../../../images/destinations/noctilum/SandbankRuins.j
 import SouthAntsNest from "../../../images/destinations/noctilum/SouthAntsNest.jpg";
 import YawningGiant from "../../../images/destinations/noctilum/YawningGiant.png";
 
-var ObliviaData = [
+const ObliviaData = [
   {
     id: "aaroy-plain",
     title: "Aaroy Plain",
