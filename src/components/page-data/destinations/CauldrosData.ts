@@ -1,7 +1,4 @@
-import {
-  getDestinationData,
-  type LandmarkList,
-} from "@/app/lib/DestinationData";
+import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
 import DragonbonePromontory from "@/components/images/destinations/cauldros/DragonbonePromontory.jpg";
 import GnahanVilla from "@/components/images/destinations/cauldros/Gnahan_Villa.jpg";
 import InfernalLedges from "@/components/images/destinations/cauldros/InfernalLedges.jpg";

@@ -1,7 +1,4 @@
-import {
-  getDestinationData,
-  type LandmarkList,
-} from "@/app/lib/DestinationData";
+import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
 import AdministrativeDistrict from "@/components/images/nla/ArmoryAlley.jpg";
 import CommercialDistrict from "@/components/images/nla/CommercialDistrict.png";
 import IndustrialDistrict from "@/components/images/nla/IndustrialDistrict.png";

@@ -1,7 +1,4 @@
-import {
-  getDestinationData,
-  type LandmarkList,
-} from "@/app/lib/DestinationData";
+import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
 import BidentCrossing from "@/components/images/destinations/noctilum/BidentCrossing.jpg";
 import BreakwaterNarrow from "@/components/images/destinations/noctilum/BreakwaterNarrow.jpg";
 import CelestialAscent from "@/components/images/destinations/noctilum/CelestialAscent.jpg";

@@ -1,7 +1,4 @@
-import {
-  getDestinationData,
-  type LandmarkList,
-} from "@/app/lib/DestinationData";
+import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
 import BiahnoHills from "@/components/images/destinations/primordia/BiahnoHills.png";
 import BiahnoLake from "@/components/images/destinations/primordia/BiahnoLake.jpg";
 import EastGatePlain from "@/components/images/destinations/primordia/EastGatePlain.jpg";

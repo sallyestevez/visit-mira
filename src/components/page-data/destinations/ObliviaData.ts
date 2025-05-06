@@ -1,7 +1,4 @@
-import {
-  getDestinationData,
-  type LandmarkList,
-} from "@/app/lib/DestinationData";
+import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
 
 import AaroyPlain from "@/components/images/destinations/oblivia/AaroyPlain.jpg";
 import AzureLagoon from "@/components/images/destinations/oblivia/AzureLagoon.jpg";

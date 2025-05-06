@@ -1,7 +1,4 @@
-import {
-  getDestinationData,
-  type LandmarkList,
-} from "@/app/lib/DestinationData";
+import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
 import CauldrosThreshold from "@/components/images/destinations/sylvalum/Threshold.jpg";
 import CleansingSpring from "@/components/images/destinations/sylvalum/CleansingSpring.jpg";
 import DelusiansNorthSummit from "@/components/images/destinations/sylvalum/Delusians_North_Summit.jpg";
