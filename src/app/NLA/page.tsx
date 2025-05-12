@@ -25,13 +25,12 @@ function NLAContent() {
             Industrial, and Residential.
           </p>
           <p>
-            {
-              "Visitors will be staying in the Residential District, and can shop"
-            }
-            {"to their heart's content in the Commercial District. The"}
-            {
-              "Administrative and Industrial Districts are off-limits to visitors."
-            }
+            Visitors will be staying in the Residential District, and can shop
+            to their heart&apos;s content in the Commercial District.
+          </p>
+          <p>
+            The Administrative and Industrial Districts are off-limits to
+            visitors.
           </p>
         </div>
         <div className="locations-list nla-districts">

@@ -2,7 +2,6 @@
 
 @import "tailwindcss";
 
-
 :root {
   --deep-black: #000000;
   --electric-blue: #7fe9ec;
@@ -55,7 +54,7 @@ html {
 .container {
   align-items: center;
   display: flex;
-  gap: auto;
+  gap: 128px;
   height: 80px;
   justify-content: center;
   padding: 24px 48px;
@@ -200,14 +199,16 @@ html {
 }
 
 .mira-description h2,
-.home-section-title h2 {
+.home-section-title h2,
+.destination-card h2 {
   font-family: "Jost", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
 }
 
-.home-section-title {
+.home-section-title,
+.destination-card {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -220,7 +221,8 @@ html {
 }
 
 .home-section,
-.nla-section {
+.nla-section,
+.nla-districts {
   align-items: center;
   align-self: stretch;
   border-bottom: 1px var(--transparent-midnight-green) solid;
@@ -244,7 +246,8 @@ html {
   text-decoration: underline;
 }
 
-.nla-image {
+.nla-image,
+.destination-card-image {
   align-items: center;
   border: 1px solid var(--transparent-midnight-green);
   border-radius: 8px;
@@ -253,7 +256,8 @@ html {
   width: 920px;
 }
 
-.nla-image img {
+.nla-image img,
+.destination-card-image img {
   border-radius: 8px;
   width: 920px;
 }
@@ -436,24 +440,11 @@ html {
   align-self: stretch;
 }
 
-.nla-description {
-  align-items: center;
-  align-self: stretch;
-  border-bottom: 1px var(--transparent-midnight-green) solid;
-  border-width: 1px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  justify-content: center;
-  padding: 32px 128px;
-}
-
-.nla-description p {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-  width: 50%;
+.nla-districts {
+  font-family: Jost, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 36px;
 }
 
 /* Extra Small Devices  */
@@ -552,12 +543,14 @@ html {
   }
 
   .mira-description h2,
-  .home-section-title h2 {
+  .home-section-title h2,
+  .destination-card h2 {
     font-size: 24px;
     line-height: 32px;
   }
 
-  .home-section-title {
+  .home-section-title,
+  .destination-card {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -567,7 +560,8 @@ html {
   }
 
   .home-section,
-  .nla-section {
+  .nla-section,
+  .nla-districts {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -660,8 +654,198 @@ html {
   }
 }
 
-/* Small & Medium Devices */
-@media (min-width: 541px) and (max-width: 1024px) {
+/* Small Devices */
+@media (min-width: 541px) and (max-width: 768px) {
+  .navbar {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    height: 84px;
+  }
+
+  .container {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 16px;
+  }
+
+  .home-link {
+    width: 100%;
+  }
+
+  .footer-page-links {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    justify-content: center;
+    padding: 48px 36px;
+    width: 100%;
+  }
+
+  .welcome-banner {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 24px 36px;
+  }
+
+  .home-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: auto;
+  }
+
+  .home-image {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .mira-description,
+  .nla-page-description {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    justify-content: center;
+    padding: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mira-description p,
+  .nla-page-description p {
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .mira-description h2,
+  .home-section-title h2,
+  .destination-card h2 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .nla-page-description {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 36px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .nla-page-description p {
+    text-align: center;
+    width: 80%;
+  }
+
+  .home-section-title {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .home-section,
+  .nla-section,
+  .nla-districts {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 24px 36px;
+  }
+
+  .nla-image {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    width: 100%;
+  }
+
+  .nla-image img {
+    height: auto;
+    width: 100%;
+  }
+
+  .nla-description,
+  .destination-description {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .destinations-list {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .destination {
+    height: auto;
+    width: 100%;
+  }
+
+  .destination-image {
+    align-self: stretch;
+  }
+
+  .customer-reviews-list {
+    align-items: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 80%;
+  }
+
+  .customer-review {
+    align-items: flex-start;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+
+  .customer-info {
+    align-items: center;
+    align-self: stretch;
+    display: flex;
+    gap: 4px;
+  }
+
+  .customer-img-name {
+    align-items: center;
+    display: flex;
+    flex: 1 0 0;
+    gap: 8px;
+  }
+}
+
+/* Medium Devices */
+@media (min-width: 769px) and (max-width: 1024px) {
   .navbar {
     align-items: flex-start;
     display: flex;
@@ -743,7 +927,8 @@ html {
   }
 
   .home-section,
-  .nla-section {
+  .nla-section,
+  .nla-districts {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -836,7 +1021,8 @@ html {
   }
 
   .home-section,
-  .nla-section {
+  .nla-section,
+  .nla-districts {
     padding: 48px 72px;
   }
 
