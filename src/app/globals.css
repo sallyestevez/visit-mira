@@ -246,8 +246,7 @@ html {
   text-decoration: underline;
 }
 
-.nla-image,
-.destination-card-image {
+.nla-image {
   align-items: center;
   border: 1px solid var(--transparent-midnight-green);
   border-radius: 8px;
@@ -256,8 +255,7 @@ html {
   width: 920px;
 }
 
-.nla-image img,
-.destination-card-image img {
+.nla-image img {
   border-radius: 8px;
   width: 920px;
 }
@@ -436,15 +434,43 @@ html {
   padding: 60px 128px;
 }
 
+.page-header h1 {
+  color: var(--midnight-green);
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+}
+
 .page-header img {
   align-self: stretch;
+  object-fit: cover;
+  opacity: 0.4;
 }
 
 .nla-districts {
-  font-family: Jost, sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
+}
+
+.nla-image,
+.destination-card-image {
+  align-items: center;
+  border: 1px solid var(--transparent-midnight-green);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 720px;
+}
+
+.nla-image img,
+.destination-card-image img {
+  border-radius: 8px;
+  width: 720px;
 }
 
 /* Extra Small Devices  */
@@ -609,11 +635,14 @@ html {
     width: 100%;
   }
 
-  .destination-image {
+  .destination-image,
+  .destination-card-image {
     align-self: stretch;
+    width: auto;
   }
 
-  .destination-image img {
+  .destination-image img,
+  .destination-card-image img {
     height: auto;
     object-fit: cover;
     width: 100%;
@@ -808,8 +837,10 @@ html {
     width: 100%;
   }
 
-  .destination-image {
+  .destination-image,
+  .destination-card-image {
     align-self: stretch;
+    width: auto;
   }
 
   .customer-reviews-list {
