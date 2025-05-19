@@ -6,7 +6,8 @@ import BigArch from "@/components/images/destinations/oblivia/BigArch.jpg";
 import CrypticSign from "@/components/images/destinations/oblivia/CrypticSign.jpg";
 import DemonsPocket from "@/components/images/destinations/oblivia/DemonsPocket.jpg";
 import DrowningRing from "@/components/images/destinations/oblivia/DrowningRing.jpg";
-import EjiriPromontory from "@/components/images/destinations/oblivia/Ejiri_Promontory.jpg";
+import EjiriPromontory from "@/components/images/destinations/oblivia/EjiriPromontory.jpg";
+import FloatingReef from "@/components/images/destinations/oblivia/FloatingReef.jpg";
 import GiantRing from "@/components/images/destinations/oblivia/Giant_Ring.jpg";
 import GreatWashingtonIsle from "@/components/images/destinations/oblivia/GreatWashingtonIsle.jpg";
 import LakeBasel from "@/components/images/destinations/oblivia/LakeBasel.png";
@@ -23,6 +24,7 @@ export const obliviaLandmarks: LandmarkList = [
   { title: "Demon's Pocket", img: DemonsPocket },
   { title: "Drowning Ring", img: DrowningRing },
   { title: "Ejiri Promontory", img: EjiriPromontory },
+  { title: "Floating Reef", img: FloatingReef },
   { title: "Giant Ring", img: GiantRing },
   { title: "Great Washington Isle", img: GreatWashingtonIsle },
   { title: "Lake Basel", img: LakeBasel },

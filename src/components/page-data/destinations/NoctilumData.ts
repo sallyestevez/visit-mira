@@ -5,9 +5,12 @@ import CelestialAscent from "@/components/images/destinations/noctilum/Celestial
 import CelestialCleave from "@/components/images/destinations/noctilum/CelestialCleave.jpg";
 import CoilTreeCape from "@/components/images/destinations/noctilum/CoilTreeCape.jpg";
 import Decapotamon from "@/components/images/destinations/noctilum/Decapotamon.jpg";
+import DivineRoost from "@/components/images/destinations/noctilum/DecapotamonVista.jpg";
 import DecapotamonVista from "@/components/images/destinations/noctilum/DecapotamonVista.jpg";
+import FukaiPass from "@/components/images/destinations/noctilum/FukaiPass.jpg";
 import GardenSpring from "@/components/images/destinations/noctilum/GardenSpring.jpg";
 import GoblinsNarrow from "@/components/images/destinations/noctilum/GoblinsNarrow.jpg";
+import GreatNail from "@/components/images/destinations/noctilum/GreatNail.jpg";
 import GreatTridentCrossing from "@/components/images/destinations/noctilum/GreatTridentCrossing.jpg";
 import MillstoneRidge from "@/components/images/destinations/noctilum/MillstoneRidge.jpg";
 import NarcissusTree from "@/components/images/destinations/noctilum/NarcissusTree.jpg";
@@ -23,10 +26,13 @@ export const noctilumLandmarks: LandmarkList = [
   { title: "Celestial Ascent", img: CelestialAscent },
   { title: "Celestial Cleave", img: CelestialCleave },
   { title: "Coil Tree Cape", img: CoilTreeCape },
+  { title: "Divine Roost", img: DivineRoost },
   { title: "Decapotamon", img: Decapotamon },
   { title: "Decapotamon Vista", img: DecapotamonVista },
+  { title: "Fukai Pass", img: FukaiPass },
   { title: "Garden Spring", img: GardenSpring },
   { title: "Goblin's Narrow", img: GoblinsNarrow },
+  { title: "Great Nail", img: GreatNail },
   { title: "Great Trident Crossing", img: GreatTridentCrossing },
   { title: "Millstone Ridge", img: MillstoneRidge },
   { title: "Narcissus Tree", img: NarcissusTree },

@@ -18,7 +18,7 @@ function NLAContent() {
             backgroundImage={NewLosAngeles}
           />
         </div>
-        <div className="nla-page-description">
+        <div className="destination-page-description nla-page-description">
           <p>
             This location is based on the city of Los Angeles on Earth. It is
             separated into four districts: Administrative, Commercial,

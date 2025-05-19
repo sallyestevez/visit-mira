@@ -177,7 +177,7 @@ html {
 }
 
 .mira-description,
-.nla-page-description {
+.destination-page-description {
   align-items: center;
   align-self: stretch;
   border-bottom: 1px var(--transparent-midnight-green) solid;
@@ -190,7 +190,7 @@ html {
 }
 
 .mira-description p,
-.nla-page-description p {
+.destination-page-description p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -261,7 +261,8 @@ html {
 }
 
 .nla-description,
-.destination-description {
+.destination-description,
+.location-description {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -274,14 +275,16 @@ html {
   padding: 12px;
 }
 
-.destinations-list {
+.destinations-list,
+.locations-list {
   align-items: flex-start;
   display: flex;
   gap: 24px;
   justify-content: center;
 }
 
-.destination {
+.destination,
+.location {
   align-items: center;
   border: 1px var(--transparent-midnight-green) solid;
   border-radius: 8px;
@@ -291,7 +294,8 @@ html {
   width: 532px;
 }
 
-.destination-image {
+.destination-image,
+.location-image {
   align-items: center;
   align-self: stretch;
   background: var(--transparent-cadet-gray);
@@ -305,13 +309,15 @@ html {
   width: 100%;
 }
 
-.destination-image img {
+.destination-image img,
+.location-image img {
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
 
-.destination-description {
+.destination-description,
+.location-description {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -371,7 +377,8 @@ html {
   line-height: 20px;
 }
 
-.customer-reviews-list {
+.customer-reviews-list,
+.locations-list {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -548,7 +555,7 @@ html {
   }
 
   .mira-description,
-  .nla-page-description {
+  .destination-page-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -561,7 +568,7 @@ html {
   }
 
   .mira-description p,
-  .nla-page-description p {
+  .destination-page-description p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -630,25 +637,29 @@ html {
     width: 100%;
   }
 
-  .destination {
+  .destination,
+  .location {
     height: auto;
     width: 100%;
   }
 
   .destination-image,
-  .destination-card-image {
+  .destination-card-image,
+  .location-image {
     align-self: stretch;
     width: auto;
   }
 
   .destination-image img,
-  .destination-card-image img {
+  .destination-card-image img,
+  .location-image img {
     height: auto;
     object-fit: cover;
     width: 100%;
   }
 
-  .customer-reviews-list {
+  .customer-reviews-list,
+  .locations-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -743,7 +754,7 @@ html {
   }
 
   .mira-description,
-  .nla-page-description {
+  .destination-page-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -756,7 +767,7 @@ html {
   }
 
   .mira-description p,
-  .nla-page-description p {
+  .destination-page-description p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -770,7 +781,7 @@ html {
     line-height: 32px;
   }
 
-  .nla-page-description {
+  .destination-page-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -781,7 +792,7 @@ html {
     width: 100%;
   }
 
-  .nla-page-description p {
+  .destination-page-description p {
     text-align: center;
     width: 80%;
   }
@@ -817,14 +828,16 @@ html {
   }
 
   .nla-description,
-  .destination-description {
+  .destination-description,
+  .location-description {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
     flex-direction: column;
   }
 
-  .destinations-list {
+  .destinations-list,
+  .locations-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -832,18 +845,21 @@ html {
     width: 100%;
   }
 
-  .destination {
+  .destination,
+  .location {
     height: auto;
     width: 100%;
   }
 
   .destination-image,
-  .destination-card-image {
+  .destination-card-image,
+  .location-image {
     align-self: stretch;
     width: auto;
   }
 
-  .customer-reviews-list {
+  .customer-reviews-list,
+  .locations-list {
     align-items: center;
     align-self: center;
     display: flex;
@@ -934,7 +950,7 @@ html {
     width: 100%;
   }
 
-  .nla-page-description {
+  .destination-page-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -945,7 +961,7 @@ html {
     width: 100%;
   }
 
-  .nla-page-description p {
+  .destination-page-description p {
     text-align: center;
     width: 80%;
   }
@@ -981,14 +997,16 @@ html {
   }
 
   .nla-description,
-  .destination-description {
+  .destination-description,
+  .location-description {
     align-items: flex-start;
     align-self: stretch;
     display: flex;
     flex-direction: column;
   }
 
-  .destinations-list {
+  .destinations-list,
+  .locations-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -996,16 +1014,19 @@ html {
     width: 100%;
   }
 
-  .destination {
+  .destination,
+  .location {
     height: auto;
     width: 100%;
   }
 
-  .destination-image {
+  .destination-image,
+  .location-image {
     align-self: stretch;
   }
 
-  .customer-reviews-list {
+  .customer-reviews-list,
+  .locations-list {
     align-items: center;
     align-self: center;
     display: flex;
@@ -1047,7 +1068,7 @@ html {
     height: 356px;
   }
 
-  .nla-page-description {
+  .destination-page-description {
     padding: 48px 72px;
   }
 
@@ -1065,20 +1086,24 @@ html {
     width: 100%;
   }
 
-  .destinations-list {
+  .destinations-list,
+  .locations-list {
     width: auto;
   }
 
-  .destination {
+  .destination,
+  .location {
     width: 500px;
   }
 
   .destination-image,
-  .destination-image img {
+  .destination-image img,
+  .location-image img {
     width: 100%;
   }
 
-  .customer-reviews-list {
+  .customer-reviews-list,
+  .locations-list {
     align-self: center;
     align-items: center;
     flex-direction: column;
