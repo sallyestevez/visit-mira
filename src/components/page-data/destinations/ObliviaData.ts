@@ -11,10 +11,10 @@ import FloatingReef from "@/components/images/destinations/oblivia/FloatingReef.
 import GiantRing from "@/components/images/destinations/oblivia/Giant_Ring.jpg";
 import GreatWashingtonIsle from "@/components/images/destinations/oblivia/GreatWashingtonIsle.jpg";
 import LakeBasel from "@/components/images/destinations/oblivia/LakeBasel.png";
-import LeaningRing from "@/components/images/destinations/noctilum/LeaningRing.jpg";
-import SandbankRuins from "@/components/images/destinations/noctilum/SandbankRuins.jpg";
-import SouthAntsNest from "@/components/images/destinations/noctilum/SouthAntsNest.jpg";
-import YawningGiant from "@/components/images/destinations/noctilum/YawningGiant.png";
+import LeaningRing from "@/components/images/destinations/oblivia/LeaningRing.jpg";
+import SandbankRuins from "@/components/images/destinations/oblivia/SandbankRuins.jpg";
+import SouthAntsNest from "@/components/images/destinations/oblivia/SouthAntsNest.jpg";
+import YawningGiant from "@/components/images/destinations/oblivia/YawningGiant.png";
 
 export const obliviaLandmarks: LandmarkList = [
   { title: "Aaroy Plain", img: AaroyPlain },

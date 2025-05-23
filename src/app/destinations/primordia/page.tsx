@@ -4,7 +4,6 @@ import Image from "next/image";
 
 import PageHeader from "@/components/PageHeader";
 import PrimordiaData from "@/components/page-data/destinations/PrimordiaData";
-import DestinationDescriptionData from "@/components/page-data/destinations/DestinationDescriptionData";
 
 import PrimordiaImg from "@/components/images/destinations/primordia/Primordia.jpg";
 
@@ -19,8 +18,9 @@ export default function Primordia() {
         <div className="destination-page-description primordia-page-description">
           <p>
             Surrounded by grassy plains, mountains, and beaches. Primordia is a
-            very "welcoming" region with tons of locations to explore, and lots
-            of wildlife to encounter. New Los Angeles (NLA) is located here.
+            very &quot;welcoming&quot; region with tons of locations to explore,
+            and lots of wildlife to encounter. New Los Angeles (NLA) is located
+            here.
           </p>
           <p>
             Neighboring Regions: Noctilum (northwest), Oblivia (east), Sylvalum
@@ -31,7 +31,7 @@ export default function Primordia() {
           <div className="home-section-title">
             <h2>Must-See Locations!</h2>
           </div>
-          <div className="locations-list customer-reviews-list">
+          <div className="locations-list">
             {PrimordiaLocations.map((location) => {
               return (
                 <div className="location" key={location.id}>

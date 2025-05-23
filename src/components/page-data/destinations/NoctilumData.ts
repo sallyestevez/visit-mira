@@ -5,7 +5,7 @@ import CelestialAscent from "@/components/images/destinations/noctilum/Celestial
 import CelestialCleave from "@/components/images/destinations/noctilum/CelestialCleave.jpg";
 import CoilTreeCape from "@/components/images/destinations/noctilum/CoilTreeCape.jpg";
 import Decapotamon from "@/components/images/destinations/noctilum/Decapotamon.jpg";
-import DivineRoost from "@/components/images/destinations/noctilum/DecapotamonVista.jpg";
+import DivineRoost from "@/components/images/destinations/noctilum/DivineRoost.jpg";
 import DecapotamonVista from "@/components/images/destinations/noctilum/DecapotamonVista.jpg";
 import FukaiPass from "@/components/images/destinations/noctilum/FukaiPass.jpg";
 import GardenSpring from "@/components/images/destinations/noctilum/GardenSpring.jpg";

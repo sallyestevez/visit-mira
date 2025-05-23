@@ -1,8 +1,8 @@
 import { getDestinationData, type LandmarkList } from "@/lib/DestinationData";
-import ArendtBridge from "@/components/images/destinations/primordia/ArendtBridge.png";
+import ArendtBridge from "@/components/images/destinations/primordia/ArendtBridge.jpg";
 import BiahnoHills from "@/components/images/destinations/primordia/BiahnoHills.png";
 import BiahnoLake from "@/components/images/destinations/primordia/BiahnoLake.jpg";
-import CastawayCavern from "@/components/images/destinations/primordia/CastawayCavern.png";
+import CastawayCavern from "@/components/images/destinations/primordia/CastawayCavern.jpg";
 import EastGatePlain from "@/components/images/destinations/primordia/EastGatePlain.jpg";
 import FallshornIsle from "@/components/images/destinations/primordia/FallshornIsle.jpg";
 import GreaterGeminiBridge from "@/components/images/destinations/primordia/GreaterGeminiBridge.jpg";
@@ -15,8 +15,8 @@ import SayramLake from "@/components/images/destinations/primordia/SayramLake.jp
 import SeasweptRise from "@/components/images/destinations/primordia/Seaswept_Rise.jpg";
 import SilentMire from "@/components/images/destinations/primordia/SilentMire.jpg";
 import StonelatticeCavern from "@/components/images/destinations/primordia/StonelatticeCavern.jpg";
-import TalonRockSummit from "@/components/images/destinations/primordia/TalonRockSummit.png";
-import TalonRockThirdTerrane from "@/components/images/destinations/primordia/TalonRockThirdTerrane.png";
+import TalonRockSummit from "@/components/images/destinations/primordia/TalonRockSummit.jpg";
+import TalonRockThirdTerrane from "@/components/images/destinations/primordia/TalonRockThirdTerrane.jpg";
 import TurtleNest from "@/components/images/destinations/primordia/TurtleNest.jpg";
 import UnicornRock from "@/components/images/destinations/primordia/Unicorn_Rock.jpg";
 
