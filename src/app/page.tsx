@@ -54,7 +54,7 @@ function HomeContent() {
               alt="New Los Angeles overview"
               loading="lazy"
             />
-            <div className="nla-description">New Los Angeles</div>
+            <div className="nla-title">New Los Angeles</div>
           </div>
         </Link>
       </div>
@@ -78,7 +78,7 @@ function HomeContent() {
                 src={DestinationDescriptionData[0].img}
                 alt={DestinationDescriptionData[0].img_alt}
               />
-              <div className="destination-description primordia-description">
+              <div className="destination-title primordia-title">
                 {DestinationDescriptionData[0].title}
               </div>
             </div>
@@ -95,7 +95,7 @@ function HomeContent() {
                 src={DestinationDescriptionData[1].img}
                 alt={DestinationDescriptionData[1].img_alt}
               />
-              <div className="destination-description noctilum-description">
+              <div className="destination-title noctilum-title">
                 {DestinationDescriptionData[1].title}
               </div>
             </div>

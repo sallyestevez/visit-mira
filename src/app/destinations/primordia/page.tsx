@@ -42,7 +42,7 @@ export default function Primordia() {
                     src={location.img}
                     alt={location.img_alt}
                   />
-                  <div className="location-description primordia-description">
+                  <div className="location-title primordia-title">
                     {location.title}
                   </div>
                 </div>

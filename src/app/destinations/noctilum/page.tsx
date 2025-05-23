@@ -39,7 +39,7 @@ export default function Noctilum() {
                     src={location.img}
                     alt={location.img_alt}
                   />
-                  <div className="location-description noctilum-description">
+                  <div className="location-title noctilum-title">
                     {location.title}
                   </div>
                 </div>

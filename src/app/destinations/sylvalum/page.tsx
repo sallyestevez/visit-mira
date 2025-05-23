@@ -38,7 +38,7 @@ export default function Sylvalum() {
                     src={location.img}
                     alt={location.img_alt}
                   />
-                  <div className="location-description sylvalum-description">
+                  <div className="location-title sylvalum-title">
                     {location.title}
                   </div>
                 </div>

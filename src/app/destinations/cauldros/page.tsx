@@ -40,7 +40,7 @@ export default function Cauldros() {
                     src={location.img}
                     alt={location.img_alt}
                   />
-                  <div className="location-description cauldros-description">
+                  <div className="location-title cauldros-title">
                     {location.title}
                   </div>
                 </div>

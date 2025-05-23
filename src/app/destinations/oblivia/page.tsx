@@ -39,7 +39,7 @@ export default function Oblivia() {
                     src={location.img}
                     alt={location.img_alt}
                   />
-                  <div className="location-description oblivia-description">
+                  <div className="location-title oblivia-title">
                     {location.title}
                   </div>
                 </div>
