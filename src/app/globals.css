@@ -190,9 +190,19 @@ html {
   padding: 32px 128px;
 }
 
+.faqs-description {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 24px;
+}
+
 .mira-description p,
 .destination-page-description p,
-.destinations-description p {
+.destinations-description p,
+.faqs-description p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -200,14 +210,18 @@ html {
   width: 50%;
 }
 
-.destinations-description p {
+.destinations-description p,
+.faqs-description p {
   text-align: center;
 }
 
 .mira-description h2,
 .home-section-title h2,
 .destinations-description h2,
-.destination-card h2 {
+.destination-card h2,
+.faqs-title h2,
+.faq-section-title h2,
+.faqs-description h2 {
   font-family: "Jost", sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -215,7 +229,9 @@ html {
 }
 
 .home-section-title,
-.destination-card {
+.destination-card,
+.faqs-title,
+.faq-section-title {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -223,13 +239,16 @@ html {
   padding: 8px;
 }
 
-.home-section-title p {
+.home-section-title p,
+.faqs-title p,
+.faq-section-title p {
   font-family: "Roboto", sans-serif;
 }
 
 .home-section,
 .nla-section,
-.nla-districts {
+.nla-districts,
+.faqs-section {
   align-items: center;
   align-self: stretch;
   border-bottom: 1px var(--transparent-midnight-green) solid;
@@ -438,6 +457,48 @@ html {
   text-align: left;
 }
 
+.faq-section-cards {
+  text-decoration: none;
+}
+
+.faq-section-cards a:hover {
+  background-color: var(--Midnight-Green, rgb(28, 65, 78));
+  border: 2.5px solid var(--cadet-gray-1);
+  border-radius: 8px;
+  color: var(--cadet-gray-1);
+  text-decoration: none;
+}
+
+a:hover .faq-card {
+  color: var(--light-cadet-gray);
+}
+
+.faq-section-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+  align-self: stretch;
+}
+
+.faq-card {
+  display: flex;
+  height: 52px;
+  padding: 16px;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--Transparent-Midnight-Green, rgba(28, 65, 78, 0.15));
+  background: var(--Transparent-Cadet-Gray, rgba(122, 155, 159, 0.15));
+  color: var(--Navy-Black, #05080a);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+}
+
 .page-header {
   display: flex;
   height: 520px;
@@ -565,7 +626,8 @@ html {
 
   .mira-description,
   .destination-page-description,
-  .destinations-description {
+  .destinations-description,
+  .faqs-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -579,7 +641,8 @@ html {
 
   .mira-description p,
   .destination-page-description p,
-  .destinations-description p {
+  .destinations-description p,
+  .faqs-description p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -589,13 +652,18 @@ html {
   .mira-description h2,
   .home-section-title h2,
   .destinations-description h2,
-  .destination-card h2 {
+  .destination-card h2,
+  .faqs-title h2,
+  .faq-section-title h2,
+  .faqs-description h2 {
     font-size: 24px;
     line-height: 32px;
   }
 
   .home-section-title,
-  .destination-card {
+  .destination-card,
+  .faqs-title,
+  .faq-section-title {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -606,7 +674,8 @@ html {
 
   .home-section,
   .nla-section,
-  .nla-districts {
+  .nla-districts,
+  .faqs-section {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -767,7 +836,8 @@ html {
 
   .mira-description,
   .destination-page-description,
-  .destinations-description {
+  .destinations-description,
+  .faqs-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -781,7 +851,8 @@ html {
 
   .mira-description p,
   .destination-page-description p,
-  .destinations-description p {
+  .destinations-description p,
+  .faqs-description p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -791,12 +862,16 @@ html {
   .mira-description h2,
   .home-section-title h2,
   .destinations-description h2,
-  .destination-card h2 {
+  .destination-card h2,
+  .faqs-title h2,
+  .faq-section-title h2,
+  .faqs-description h2 {
     font-size: 24px;
     line-height: 32px;
   }
 
-  .destination-page-description {
+  .destination-page-description,
+  .faqs-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -807,12 +882,14 @@ html {
     width: 100%;
   }
 
-  .destination-page-description p {
+  .destination-page-description p,
+  .faqs-description p {
     text-align: center;
     width: 80%;
   }
 
-  .home-section-title {
+  .home-section-title,
+  .faq-section-title {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -821,7 +898,8 @@ html {
 
   .home-section,
   .nla-section,
-  .nla-districts {
+  .nla-districts,
+  .faqs-section {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -976,12 +1054,15 @@ html {
     width: 100%;
   }
 
-  .destination-page-description p {
+  .destination-page-description p,
+  .faqs-description p {
     text-align: center;
     width: 80%;
   }
 
-  .home-section-title {
+  .home-section-title,
+  .faqs-title,
+  .faq-section-title {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -990,7 +1071,8 @@ html {
 
   .home-section,
   .nla-section,
-  .nla-districts {
+  .nla-districts,
+  .faqs-section {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -1083,13 +1165,15 @@ html {
     height: 356px;
   }
 
-  .destination-page-description {
+  .destination-page-description,
+  .faqs-description {
     padding: 48px 72px;
   }
 
   .home-section,
   .nla-section,
-  .nla-districts {
+  .nla-districts,
+  .faqs-section {
     padding: 48px 72px;
   }
 
@@ -1132,5 +1216,5 @@ html {
 }
 
 /* Extra Large Devices */
-@media (min-width: 1281px) {
-}
+/* @media (min-width: 1281px) {
+} */

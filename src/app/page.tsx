@@ -5,6 +5,7 @@ import Link from "next/link";
 
 import DestinationDescriptionData from "@/components/page-data/destinations/DestinationDescriptionData";
 import CustomerReviewsData from "@/components/page-data/CustomerReviewsData";
+import FAQTabs from "@/components/images/faqs/FAQTabs";
 
 import Mira from "@/components/images/home/Mira.png";
 import NewLosAngeles from "@/components/images/nla/New_Los_Angeles.jpg";
@@ -164,12 +165,21 @@ function HomeContent() {
           })}
         </div>
       </div>
-      {/* <div className="frequently-asked-questions home-section">
+      <div className="frequently-asked-questions home-section">
         <div className="home-section-title">
-          <h2>FAQs</h2>
+          <Link href="/FAQs" onClick={() => window.scrollTo(0, 0)}>
+            <h2>FAQs</h2>
+          </Link>
           <p>Do you have any questions regarding your stay?</p>
         </div>
-      </div> */}
+        <FAQTabs
+          aboutMiraSectionLink="/visit-mira/FAQs/#about-mira"
+          travelInformationSectionLink="/visit-mira/FAQs/#travel-information"
+          hotelSectionLink="/visit-mira/FAQs/#hotel"
+          transportationSectionLink="/visit-mira/FAQs/#transportation"
+          uniqueExperiencesSectionLink="/visit-mira/FAQs/#unique-experiences"
+        />
+      </div>
     </div>
   );
 }
