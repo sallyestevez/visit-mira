@@ -17,10 +17,10 @@ export default function NavBar() {
           </p>
           {/* <p>
             <Link href="/guides">Guides</Link>
-          </p>
+          </p>*/}
           <p>
             <Link href="/FAQs">FAQs</Link>
-          </p> */}
+          </p>
         </div>
       </div>
     </nav>

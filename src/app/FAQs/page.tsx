@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
 
 import PageHeader from "@/components/PageHeader";
@@ -21,8 +21,8 @@ function FAQs() {
             <h2>Do you have any questions regarding your stay?</h2>
             <p>
               Check out answers to our most-asked questions below. If your
-              question isn't listed, or still have more questions, feel free to
-              contact us!
+              question isn&apos;t listed, or still have more questions, feel
+              free to contact us!
             </p>
           </div>
           <FAQTabs
