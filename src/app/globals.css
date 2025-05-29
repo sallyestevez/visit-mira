@@ -196,6 +196,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
   gap: 24px;
 }
 
@@ -213,6 +214,7 @@ html {
 .destinations-description p,
 .faqs-description p {
   text-align: center;
+  width: 75%;
 }
 
 .mira-description h2,
@@ -469,16 +471,13 @@ html {
   text-decoration: none;
 }
 
-a:hover .faq-card {
-  color: var(--light-cadet-gray);
-}
-
 .faq-section-cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 36px;
+  gap: 24px;
   align-self: stretch;
+  flex-wrap: wrap;
 }
 
 .faq-card {
@@ -497,6 +496,61 @@ a:hover .faq-card {
   font-style: normal;
   font-weight: 700;
   line-height: 18px;
+  transition: box-shadow 0.2s;
+}
+
+.faq-card:hover {
+  box-shadow: 0 4px 16px rgba(28, 65, 78, 0.1);
+}
+
+a:hover .faq-card {
+  color: var(--light-cadet-gray);
+}
+
+.faq-section-title {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0px;
+}
+
+.faq-questions {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  width: 75%;
+}
+
+.question-answer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-left: 4px solid var(--electric-blue);
+  padding-left: 20px;
+}
+
+.question-answer h2 {
+  color: var(--midnight-green);
+  font-family: "Jost", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.question-answer p {
+  color: var(--navy-black);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.mira-map {
+  border-radius: 8px;
 }
 
 .page-header {
@@ -773,6 +827,15 @@ a:hover .faq-card {
     flex: 1 0 0;
     gap: 8px;
   }
+
+  .faq-questions {
+    width: 100%;
+    gap: 16px;
+  }
+  .question-answer {
+    padding: 8px;
+    font-size: 16px;
+  }
 }
 
 /* Small Devices */
@@ -877,7 +940,6 @@ a:hover .faq-card {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 24px 36px;
     text-align: center;
     width: 100%;
   }
@@ -1167,7 +1229,7 @@ a:hover .faq-card {
 
   .destination-page-description,
   .faqs-description {
-    padding: 48px 72px;
+    text-align: center;
   }
 
   .home-section,

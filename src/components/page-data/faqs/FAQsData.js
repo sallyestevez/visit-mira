@@ -8,16 +8,16 @@ var FAQs_DATA = [
   },
   {
     question: "What does Mira look like?",
-    answer:
+    answer1:
       "This is a very broad question. It would be better to ask what each region looks like instead, since they are all so different. Feel free to learn more about the different regions by visiting their dedicated pages.",
   },
   {
     question: "What regions does Mira have?",
-    answer: "Primordia, Noctilum, Oblivia, Sylvalum, and Cauldros!",
+    answer1: "Primordia, Noctilum, Oblivia, Sylvalum, and Cauldros!",
   },
   {
     question: "Are there any maps available for navigation?",
-    answer1: "We can provide you with this map of the planet. (map image)",
+    answer1: "We can provide you with this map of the planet.",
     answer2: "You can easily access it via your comm device.",
   },
   // Travel Information

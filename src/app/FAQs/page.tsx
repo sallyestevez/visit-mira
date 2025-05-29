@@ -7,6 +7,7 @@ import FAQsData from "@/components/page-data/faqs/FAQsData";
 import FAQTabs from "@/components/images/faqs/FAQTabs";
 
 import FAQImg from "@/components/images/faqs/SkellFlight.jpg";
+import MiraMap from "@/components/images/faqs/MiraMap.png";
 
 function FAQs() {
   return (
@@ -54,7 +55,13 @@ function FAQs() {
             <div className="question-answer">
               <h2>{FAQsData[3].question}</h2>
               <p>{FAQsData[3].answer1}</p>
-              <p>{FAQsData[3].answer2}</p>
+              <Image
+                className="mira-map"
+                src={MiraMap}
+                alt="Map of Mira"
+                width={720}
+                height={400}
+              />
             </div>
           </div>
         </div>
