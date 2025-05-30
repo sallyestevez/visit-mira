@@ -72,6 +72,10 @@ html {
   width: 60%;
 }
 
+.menu-icon {
+  display: none;
+}
+
 .nav-page-links {
   align-items: center;
   display: flex;
@@ -837,6 +841,28 @@ a:hover .faq-card {
     font-size: 16px;
   }
 }
+
+/* @media (max-width: 600px) {
+  .menu-icon {
+    cursor: pointer;
+    display: block;
+  }
+
+  .nav-page-links {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cadet-gray-1);
+    height: calc(100vh - 60px);
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    transition: all 0.5s ease-in-out;
+    width: 0px;
+  }
+} */
 
 /* Small Devices */
 @media (min-width: 541px) and (max-width: 768px) {

@@ -18,7 +18,7 @@ function FAQs() {
         </div>
         <div className="faqs-title faqs-section">
           <div className="faqs-description">
-            <h2>Do you have any questions regarding your stay?</h2>
+            <h2>Any questions regarding your stay?</h2>
             <p>
               Check out answers to our most-asked questions below. If your
               question isn&apos;t listed, or still have more questions, feel
@@ -62,6 +62,7 @@ function FAQs() {
                 width={720}
                 height={400}
               />
+              <p>{FAQsData[3].answer2}</p>
             </div>
           </div>
         </div>
