@@ -9,7 +9,7 @@ import DestinationDescriptionData from "@/components/page-data/destinations/Dest
 import MiraImg from "@/components/images/home/Mira.png";
 
 export default function Destinations() {
-  const [MiraLocations] = useState(DestinationDescriptionData);
+  const [MiraDestinations] = useState(DestinationDescriptionData);
   return (
     <div className="destinations">
       <div className="destination-content">
@@ -27,18 +27,18 @@ export default function Destinations() {
             <h2>Must-See Locations!</h2>
           </div>
           <div className="locations-list">
-            {MiraLocations.map((location) => {
+            {MiraDestinations.map((destination) => {
               return (
-                <Link href={location.id} key={location.id}>
-                  <div className="location" key={location.id}>
+                <Link href={destination.id} key={destination.id}>
+                  <div className="location" key={destination.id}>
                     <Image
                       className="location-image"
                       width={720}
                       height={400}
-                      src={location.img}
-                      alt={location.img_alt}
+                      src={destination.img}
+                      alt={destination.img_alt}
                     />
-                    <div className="location-title">{location.title}</div>
+                    <div className="location-title">{destination.title}</div>
                   </div>
                 </Link>
               );
