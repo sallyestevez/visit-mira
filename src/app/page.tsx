@@ -13,13 +13,14 @@ function HomeContent() {
   const [review] = useState(CustomerReviewsData);
   return (
     <div className="home-content">
-      <div className="welcome-banner">
-        <div className="home-title">
+      <div className="welcome-banner flex-center flex-col self-stretch lg:flex-row">
+        <div className="home-title gap-2 sm:gap-4 lg:items-start">
           <h1>Welcome to Mira</h1>
           <p>Mira is a brand-new destination for those who love adventure.</p>
         </div>
-        <div className="home-image">
+        <div className="home-image flex-1 gap-2 sm:gap-0">
           <Image
+            className="h-auto w-full rounded-2xl md:w-auto lg:h-[356px]"
             src={Mira}
             width={720}
             height={400}
@@ -176,10 +177,8 @@ function HomeContent() {
 
 export default function Home() {
   return (
-    <div className="home">
-      <div className="home-content">
-        <HomeContent />
-      </div>
-    </div>
+    <main className="home">
+      <HomeContent />
+    </main>
   );
 }
