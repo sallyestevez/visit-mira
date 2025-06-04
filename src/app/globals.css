@@ -192,14 +192,9 @@
 .mira-description p,
 .destination-page-description p,
 .destinations-description p,
-<<<<<<< HEAD
 .faqs-description p,
 .guides-description p {
   font-family: "Roboto", sans-serif;
-=======
-.faqs-description p {
-  font-family: var(--font-secondary);
->>>>>>> ee9b42c692391a122eeb7b3790405dba856f7c8d
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -219,14 +214,10 @@
 .destination-card h2,
 .faqs-title h2,
 .faq-section-title h2,
-<<<<<<< HEAD
 .faqs-description h2,
-.guides-description h2 {
-  font-family: "Jost", sans-serif;
-=======
+.guides-description h2,
 .faqs-description h2 {
   font-family: var(--font-main);
->>>>>>> ee9b42c692391a122eeb7b3790405dba856f7c8d
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
