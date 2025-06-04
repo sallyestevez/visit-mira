@@ -32,7 +32,7 @@ export default function Destinations() {
                 <Link href={destination.id} key={destination.id}>
                   <div className="location" key={destination.id}>
                     <Image
-                      className="location-image sylvalum-location-image"
+                      className="location-image"
                       width={720}
                       height={400}
                       src={destination.img}

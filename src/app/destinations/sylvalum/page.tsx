@@ -32,7 +32,7 @@ export default function Sylvalum() {
               return (
                 <div className="location" key={location.id}>
                   <Image
-                    className="location-image sylvalum-location-image"
+                    className="location-image"
                     width={720}
                     height={400}
                     src={location.img}

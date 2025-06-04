@@ -1,51 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-:root {
-  --deep-black: #000000;
-  --electric-blue: #7fe9ec;
-  --midnight-green: #1c414e;
-  --platinum: #d3d9d9;
-  --navy-black: #05080a;
-  --ash-gray: #9ca39c;
-  --cadet-gray-1: #7a9b9f;
-  --cadet-gray-2: #83a2a6;
-  --light-cadet-gray: #b6c6c7;
-  --yellow: #ffc700;
-  --light-ash-gray: #c9d0c9;
-  --transparent-cadet-gray: rgba(122, 155, 159, 0.15);
-  --transparent-electric-blue: rgba(127, 233, 236, 0.15);
-  --transparent-midnight-green: rgba(28, 65, 78, 0.15);
+@layer base {
+  :root {
+    --font-main: "Jost", sans-serif;
+    --font-secondary: "Roboto", sans-serif;
+
+    --deep-black: #000000;
+    --electric-blue: #7fe9ec;
+    --midnight-green: #1c414e;
+    --platinum: #d3d9d9;
+    --navy-black: #05080a;
+    --ash-gray: #9ca39c;
+    --cadet-gray-1: #7a9b9f;
+    --cadet-gray-2: #83a2a6;
+    --light-cadet-gray: #b6c6c7;
+    --yellow: #ffc700;
+    --light-ash-gray: #c9d0c9;
+    --transparent-cadet-gray: rgba(122, 155, 159, 0.15);
+    --transparent-electric-blue: rgba(127, 233, 236, 0.15);
+    --transparent-midnight-green: rgba(28, 65, 78, 0.15);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
-body,
-html {
-  background-color: var(--platinum);
-  color: var(--navy-black);
-  font-family: "Roboto", sans-serif;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.page-wrapper {
-  margin: 0 auto;
-  max-width: 1200vw;
-  padding: 24px;
-  width: auto;
+@layer utilities {
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .navbar {
   background-color: var(--deep-black);
-  font-family: "Jost", sans-serif;
+  font-family: var(--font-main);
   font-size: 20px;
   font-weight: 700;
   height: 84px;
@@ -100,7 +98,7 @@ html {
   align-items: center;
   background-color: var(--midnight-green);
   display: flex;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 700;
   gap: 64px;
@@ -130,54 +128,40 @@ html {
   text-decoration: underline;
 }
 
-.home-content {
+/* .home-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
+} */
 
 .welcome-banner {
-  align-items: center;
-  align-self: stretch;
   border-bottom: 1px var(--transparent-midnight-green) solid;
   border-width: 1px;
-  display: flex;
   gap: 48px;
-  justify-content: center;
   padding: 48px 128px;
 }
 
 .home-title {
-  align-items: flex-start;
+  align-items: center;
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
-  gap: 16px;
+  justify-content: center;
+  width: auto;
 }
 
 .home-title h1 {
-  font-family: "Jost", sans-serif;
+  font-family: var(--font-main);
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
 }
 
 .home-title p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
-}
-
-.home-image {
-  align-self: stretch;
-  border-radius: 16px;
-  flex: 1 0 0;
-}
-
-.home-image img {
-  border-radius: 16px;
-  height: 400px;
 }
 
 .mira-description,
@@ -208,9 +192,14 @@ html {
 .mira-description p,
 .destination-page-description p,
 .destinations-description p,
+<<<<<<< HEAD
 .faqs-description p,
 .guides-description p {
   font-family: "Roboto", sans-serif;
+=======
+.faqs-description p {
+  font-family: var(--font-secondary);
+>>>>>>> ee9b42c692391a122eeb7b3790405dba856f7c8d
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -230,9 +219,14 @@ html {
 .destination-card h2,
 .faqs-title h2,
 .faq-section-title h2,
+<<<<<<< HEAD
 .faqs-description h2,
 .guides-description h2 {
   font-family: "Jost", sans-serif;
+=======
+.faqs-description h2 {
+  font-family: var(--font-main);
+>>>>>>> ee9b42c692391a122eeb7b3790405dba856f7c8d
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
@@ -252,7 +246,7 @@ html {
 .home-section-title p,
 .faqs-title p,
 .faq-section-title p {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-secondary);
 }
 
 .home-section,
@@ -303,7 +297,7 @@ html {
   align-self: stretch;
   display: flex;
   flex-direction: column;
-  font-family: "Jost", sans-serif;
+  font-family: var(--font-main);
   font-size: 20px;
   font-weight: 700;
   gap: 4px;
@@ -399,7 +393,7 @@ html {
 }
 
 .article-text {
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-secondary);
 }
 
 .article-title {
@@ -442,7 +436,7 @@ html {
   display: flex;
   flex: 1 0 0;
   flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-secondary);
   font-size: 16px;
   gap: 16px;
   height: 132px;
@@ -586,7 +580,7 @@ a:hover .faq-card {
 .page-header h1 {
   color: var(--midnight-green);
   text-align: center;
-  font-family: "Jost", sans-serif;
+  font-family: var(--font-main);
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
@@ -602,7 +596,7 @@ a:hover .faq-card {
 .nla-districts {
   align-items: center;
   flex-direction: column;
-  font-family: "Jost", sans-serif;
+  font-family: var(--font-main);
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
@@ -673,22 +667,8 @@ a:hover .faq-card {
   }
 
   .welcome-banner {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
     gap: 12px;
     padding: 16px;
-  }
-
-  .home-title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    justify-content: center;
-    text-align: center;
-    width: auto;
   }
 
   .home-title h1 {
@@ -699,18 +679,6 @@ a:hover .faq-card {
   .home-title p {
     font-size: 18px;
     line-height: 22px;
-    width: 100%;
-  }
-
-  .home-image {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .home-image img {
-    height: auto;
     width: 100%;
   }
 
@@ -931,32 +899,8 @@ a:hover .faq-card {
   }
 
   .welcome-banner {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
     gap: 16px;
     padding: 24px 36px;
-  }
-
-  .home-title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: auto;
-  }
-
-  .home-image {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home-image img {
-    height: auto;
-    width: 100%;
   }
 
   .mira-description,
@@ -1148,32 +1092,8 @@ a:hover .faq-card {
   }
 
   .welcome-banner {
-    align-items: center;
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
     gap: 16px;
     padding: 24px 36px;
-  }
-
-  .home-title {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    width: auto;
-  }
-
-  .home-image {
-    align-items: flex-start;
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home-image img {
-    height: auto;
-    width: 100%;
   }
 
   .destination-page-description {
@@ -1296,10 +1216,6 @@ a:hover .faq-card {
     padding: 48px 72px;
   }
 
-  .home-image img {
-    height: 356px;
-  }
-
   .destination-page-description,
   .faqs-description {
     text-align: center;
@@ -1352,7 +1268,3 @@ a:hover .faq-card {
     width: 100%;
   }
 }
-
-/* Extra Large Devices */
-/* @media (min-width: 1281px) {
-} */
