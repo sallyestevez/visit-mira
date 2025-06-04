@@ -182,7 +182,8 @@ html {
 
 .mira-description,
 .destination-page-description,
-.destinations-description {
+.destinations-description,
+.guides-description {
   align-items: center;
   align-self: stretch;
   border-bottom: 1px var(--transparent-midnight-green) solid;
@@ -207,7 +208,8 @@ html {
 .mira-description p,
 .destination-page-description p,
 .destinations-description p,
-.faqs-description p {
+.faqs-description p,
+.guides-description p {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 400;
@@ -216,7 +218,8 @@ html {
 }
 
 .destinations-description p,
-.faqs-description p {
+.faqs-description p,
+.guides-description p {
   text-align: center;
   width: 75%;
 }
@@ -227,7 +230,8 @@ html {
 .destination-card h2,
 .faqs-title h2,
 .faq-section-title h2,
-.faqs-description h2 {
+.faqs-description h2,
+.guides-description h2 {
   font-family: "Jost", sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -308,7 +312,8 @@ html {
 }
 
 .destinations-list,
-.locations-list {
+.locations-list,
+.articles-list {
   align-items: flex-start;
   display: flex;
   gap: 24px;
@@ -381,9 +386,9 @@ html {
   border-radius: 8px;
   display: flex;
   gap: 16px;
-  height: 132px;
+  height: auto;
   padding: 16px;
-  width: 580px;
+  width: 532px;
 }
 
 .article-image {
@@ -410,13 +415,24 @@ html {
 }
 
 .customer-reviews-list,
-.locations-list {
+.locations-list,
+.articles-list {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
+}
+
+.article-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.article-description p:hover {
+  text-decoration: none;
 }
 
 .customer-review {
@@ -608,6 +624,22 @@ a:hover .faq-card {
   width: 720px;
 }
 
+@media (max-width: 420px) {
+  .article {
+    width: 100%;
+  }
+}
+
+@media (min-width: 421px) and (max-width: 540px) {
+  .article {
+    width: 400px;
+  }
+
+  .article-text {
+    width: 75%;
+  }
+}
+
 /* Extra Small Devices  */
 @media (max-width: 540px) {
   .navbar {
@@ -685,7 +717,8 @@ a:hover .faq-card {
   .mira-description,
   .destination-page-description,
   .destinations-description,
-  .faqs-description {
+  .faqs-description,
+  .guides-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -700,7 +733,8 @@ a:hover .faq-card {
   .mira-description p,
   .destination-page-description p,
   .destinations-description p,
-  .faqs-description p {
+  .faqs-description p,
+  .guides-description p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -713,7 +747,8 @@ a:hover .faq-card {
   .destination-card h2,
   .faqs-title h2,
   .faq-section-title h2,
-  .faqs-description h2 {
+  .faqs-description h2,
+  .guides-description h2 {
     font-size: 24px;
     line-height: 32px;
   }
@@ -798,7 +833,8 @@ a:hover .faq-card {
   }
 
   .customer-reviews-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -926,7 +962,8 @@ a:hover .faq-card {
   .mira-description,
   .destination-page-description,
   .destinations-description,
-  .faqs-description {
+  .faqs-description,
+  .guides-description {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -941,7 +978,8 @@ a:hover .faq-card {
   .mira-description p,
   .destination-page-description p,
   .destinations-description p,
-  .faqs-description p {
+  .faqs-description p,
+  .guides-description p {
     font-size: 18px;
     line-height: 22px;
     text-align: center;
@@ -954,7 +992,8 @@ a:hover .faq-card {
   .destination-card h2,
   .faqs-title h2,
   .faq-section-title h2,
-  .faqs-description h2 {
+  .faqs-description h2,
+  .guides-description h2 {
     font-size: 24px;
     line-height: 32px;
   }
@@ -1018,7 +1057,8 @@ a:hover .faq-card {
   }
 
   .destinations-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -1040,13 +1080,18 @@ a:hover .faq-card {
   }
 
   .customer-reviews-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     align-items: center;
     align-self: center;
     display: flex;
     flex-direction: column;
     gap: 16px;
     width: 80%;
+  }
+
+  .articles-list {
+    width: auto;
   }
 
   .customer-review {
@@ -1191,7 +1236,8 @@ a:hover .faq-card {
   }
 
   .destinations-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -1211,7 +1257,8 @@ a:hover .faq-card {
   }
 
   .customer-reviews-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     align-items: center;
     align-self: center;
     display: flex;
@@ -1274,7 +1321,8 @@ a:hover .faq-card {
   }
 
   .destinations-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     width: auto;
   }
 
@@ -1285,12 +1333,14 @@ a:hover .faq-card {
 
   .destination-image,
   .destination-image img,
-  .location-image img {
+  .location-image img,
+  .article-image img {
     width: 100%;
   }
 
   .customer-reviews-list,
-  .locations-list {
+  .locations-list,
+  .articles-list {
     align-self: center;
     align-items: center;
     flex-direction: column;

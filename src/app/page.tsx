@@ -9,6 +9,7 @@ import FAQTabs from "@/components/images/faqs/FAQTabs";
 
 import Mira from "@/components/images/home/Mira.png";
 import NewLosAngeles from "@/components/images/nla/New_Los_Angeles.jpg";
+import ArticleList from "@/components/page-data/guides/ArticleList";
 
 function HomeContent() {
   const [review] = useState(CustomerReviewsData);
@@ -103,42 +104,13 @@ function HomeContent() {
           </Link>
         </div>
       </div>
-      {/* <div className="travel-guides home-section">
+      <div className="travel-guides home-section">
         <div className="home-section-title">
           <h2>Travel Guides</h2>
           <p>Learn more to prepare for your trip.</p>
         </div>
-        <div className="article-list">
-          <div className="article">
-            <img className="article-image" alt="Travel guide article"></img>
-            <div className="article-text">
-              <p className="article-title">Article Title</p>
-              <p className="article-desc">Article Description</p>
-            </div>
-          </div>
-          <div className="article">
-            <img className="article-image" alt="Travel guide article"></img>
-            <div className="article-text">
-              <p className="article-title">Article Title</p>
-              <p className="article-desc">Article Description</p>
-            </div>
-          </div>
-          <div className="article">
-            <img className="article-image" alt="Travel guide article"></img>
-            <div className="article-text">
-              <p className="article-title">Article Title</p>
-              <p className="article-desc">Article Description</p>
-            </div>
-          </div>
-          <div className="article">
-            <img className="article-image" alt="Travel guide article"></img>
-            <div className="article-text">
-              <p className="article-title">Article Title</p>
-              <p className="article-desc">Article Description</p>
-            </div>
-          </div>
-        </div>
-      </div> */}
+        <ArticleList />
+      </div>
       <div className="customer-reviews home-section">
         <div className="home-section-title">
           <h2>Customer Reviews</h2>

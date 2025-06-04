@@ -1,12 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
 
 import PageHeader from "@/components/PageHeader";
 import GuidesData from "@/components/page-data/guides/GuidesData";
+import ArticleList from "@/components/page-data/guides/ArticleList";
 
-import MiraImg from "@/components/images/home/Mira.png";
+import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
 
 export default function Guides() {
   const [Guides] = useState(GuidesData);
@@ -14,7 +13,7 @@ export default function Guides() {
     <div className="guides">
       <div className="guides-content">
         <div className="guides-header">
-          <PageHeader pageTitle="Guides" backgroundImage={MiraImg} />
+          <PageHeader pageTitle="Guides" backgroundImage={GuidesHeader} />
         </div>
         <div className="guides-description">
           <h2>Still Curious? Want to Learn More?</h2>
@@ -27,17 +26,7 @@ export default function Guides() {
           <div className="home-section-title">
             <h2>Travel Guides</h2>
           </div>
-          <div className="articles-list">
-            {Guides.map((article) => {
-              return (
-                <Link href={article.id} key={article.id}>
-                  <div className="location" key={article.id}>
-                    <div className="location-title">{article.title}</div>
-                  </div>
-                </Link>
-              );
-            })}
-          </div>
+          <ArticleList />
         </div>
       </div>
     </div>
