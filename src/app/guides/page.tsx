@@ -2,12 +2,11 @@
 import React, { useState } from "react";
 
 import PageHeader from "@/components/PageHeader";
-import GuidesData from "@/components/page-data/guides/GuidesData";
 import ArticleList from "@/components/page-data/guides/ArticleList";
 
 import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
 
-function GuidesContent() {
+export default function Guides() {
   return (
     <div className="guides">
       <div className="guides-content">
@@ -29,13 +28,5 @@ function GuidesContent() {
         </div>
       </div>
     </div>
-  );
-}
-
-export default function Guides() {
-  return (
-    <main className="guides">
-      <GuidesContent />
-    </main>
   );
 }

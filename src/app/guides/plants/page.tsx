@@ -1,7 +1,5 @@
 "use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
+import React from "react";
 
 import PageHeader from "@/components/PageHeader";
 import PlantList from "@/components/page-data/guides/PlantList";
@@ -15,11 +13,11 @@ function PlantsContent() {
         <div className="guides-header">
           <PageHeader pageTitle="Plants" backgroundImage={GuidesHeader} />
         </div>
-        <div className="plants-description">
+        <div className="guides-description">
           <h2>{GuidesData[0].title}</h2>
           <p>{GuidesData[0].description}</p>
         </div>
-        <div className="featured-guides-section home-section">
+        <div className="home-section">
           <PlantList />
         </div>
       </div>

@@ -9,11 +9,12 @@ import MiraImg from "@/components/images/home/Mira.png";
 
 export default function ArticleList() {
   const [Guides] = useState(GuidesData);
+
   return (
     <div className="articles-list">
       {Guides.map((article) => {
         return (
-          <Link href={article.id} key={article.id}>
+          <Link href={`/guides/${article.id}`} key={article.id}>
             <div className="article" key={article.id}>
               <Image className="article-image" src={MiraImg} alt="Mira" />
               <div className="article-text">
@@ -26,4 +27,16 @@ export default function ArticleList() {
       })}
     </div>
   );
+
+  // return (
+  //   <div className="article-list">
+  //     {Guides.map((article) => (
+  //       <Link href={`/guides/${article.id}`} key={article.id}>
+  //         <div className="article">
+  //           <h3>{article.title}</h3>
+  //         </div>
+  //       </Link>
+  //     ))}
+  //   </div>
+  // );
 }

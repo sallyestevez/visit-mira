@@ -298,7 +298,8 @@
 
 .destinations-list,
 .locations-list,
-.articles-list {
+.articles-list,
+.guide-list {
   align-items: flex-start;
   display: flex;
   gap: 24px;
@@ -355,7 +356,8 @@
   width: 100%;
 }
 
-.article-list {
+.article-list,
+.guide-list {
   align-content: center;
   align-items: center;
   align-self: stretch;
@@ -365,35 +367,65 @@
   justify-content: center;
 }
 
-.article {
-  align-items: flex-start;
+.article,
+.guide-item {
+  background: var(--transparent-cadet-gray, rgba(122, 155, 159, 0.15));
   border: 1px solid var(--transparent-midnight-green);
-  border-radius: 8px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(28, 65, 78, 0.05);
   display: flex;
   gap: 16px;
   height: auto;
   padding: 16px;
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+}
+
+.article {
+  align-items: flex-start;
   width: 532px;
 }
 
-.article-image {
+.guide-item {
+  align-items: center;
+  flex-direction: column;
+  width: 320px;
+}
+
+.article:hover,
+.guide-item:hover {
+  box-shadow: 0 6px 24px rgba(28, 65, 78, 0.12);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.article-image,
+.guide-image {
   background-color: var(--transparent-cadet-gray);
   border-radius: 4px;
   height: 100px;
+  margin-bottom: 4px;
+  object-fit: cover;
   width: 100px;
 }
 
-.article-text {
+.article-text,
+.guide-text {
   font-family: var(--font-secondary);
 }
 
-.article-title {
+.article-title,
+.guide-title {
+  color: var(--midnight-green, #1c414e);
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.article-desc {
+.article-description,
+.guides-description,
+.guide-item-description {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -401,7 +433,8 @@
 
 .customer-reviews-list,
 .locations-list,
-.articles-list {
+.articles-list,
+.guide-list {
   align-items: flex-start;
   align-self: stretch;
   display: flex;
@@ -410,7 +443,8 @@
   justify-content: center;
 }
 
-.article-text {
+.article-text,
+.guide-text {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -418,6 +452,27 @@
 
 .article-description p:hover {
   text-decoration: none;
+}
+
+.guide-tags {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.guide-tags div {
+  align-items: center;
+  background: var(--Transparent-Cadet-Gray, rgba(122, 155, 159, 0.15));
+  border: 0.5px solid var(--Transparent-Midnight-Green, rgba(28, 65, 78, 0.15));
+  border-radius: 4px;
+  display: flex;
+  font-size: 12px;
+  font-weight: 600;
+  gap: 2px;
+  justify-content: center;
+  padding: 2px 4px;
 }
 
 .customer-review {
@@ -610,14 +665,39 @@ a:hover .faq-card {
 }
 
 @media (max-width: 420px) {
+  .guide-list {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+  }
+
   .article {
     width: 100%;
+  }
+
+  .guide-item {
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
   }
 }
 
 @media (min-width: 421px) and (max-width: 540px) {
   .article {
     width: 400px;
+  }
+
+  .guide-list {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    align-items: center;
+  }
+
+  .guide-item {
+    width: 90%;
+    padding: 12px;
   }
 
   .article-text {
@@ -793,7 +873,8 @@ a:hover .faq-card {
 
   .customer-reviews-list,
   .locations-list,
-  .articles-list {
+  .articles-list,
+  .guide-list {
     align-items: center;
     align-self: stretch;
     display: flex;
@@ -1029,6 +1110,18 @@ a:hover .faq-card {
     width: auto;
   }
 
+  .guide-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+
+  .guide-item {
+    width: 260px;
+    padding: 16px;
+  }
+
   .customer-review {
     align-items: flex-start;
     align-self: stretch;
@@ -1178,6 +1271,18 @@ a:hover .faq-card {
     width: 80%;
   }
 
+  .guide-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .guide-item {
+    width: 320px;
+    padding: 20px;
+  }
+
   .customer-review {
     align-items: flex-start;
     align-self: stretch;
@@ -1241,7 +1346,8 @@ a:hover .faq-card {
   .destination-image,
   .destination-image img,
   .location-image img,
-  .article-image img {
+  .article-image img,
+  .guide-image img {
     width: 100%;
   }
 
@@ -1253,6 +1359,18 @@ a:hover .faq-card {
     flex-direction: column;
     gap: 16px;
     width: 75%;
+  }
+
+  .guide-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+  }
+
+  .guide-item {
+    width: 320px;
+    padding: 20px;
   }
 
   .customer-review {

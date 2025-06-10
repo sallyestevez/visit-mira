@@ -32,9 +32,9 @@ export default function NavBar() {
           <p>
             <Link href="/destinations">Destinations</Link>
           </p>
-          {/* <p>
+          <p>
             <Link href="/guides">Guides</Link>
-          </p> */}
+          </p>
           <p>
             <Link href="/FAQs">FAQs</Link>
           </p>
