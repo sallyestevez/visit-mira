@@ -8,7 +8,7 @@ import DestinationDescriptionData from "@/components/page-data/destinations/Dest
 
 import MiraImg from "@/components/images/home/Mira.png";
 
-export default function Destinations() {
+function DestinationsContent() {
   const [MiraDestinations] = useState(DestinationDescriptionData);
   return (
     <div className="destinations">
@@ -47,5 +47,13 @@ export default function Destinations() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function Destinations() {
+  return (
+    <main className="destinations">
+      <DestinationsContent />
+    </main>
   );
 }

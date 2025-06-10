@@ -7,8 +7,7 @@ import ArticleList from "@/components/page-data/guides/ArticleList";
 
 import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
 
-export default function Guides() {
-  const [Guides] = useState(GuidesData);
+function GuidesContent() {
   return (
     <div className="guides">
       <div className="guides-content">
@@ -30,5 +29,13 @@ export default function Guides() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function Guides() {
+  return (
+    <main className="guides">
+      <GuidesContent />
+    </main>
   );
 }

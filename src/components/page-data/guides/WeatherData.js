@@ -1,22 +1,22 @@
-import Aurora from "@/components/images/weather/Aurora.png";
-import BrimstoneRain from "@/components/images/weather/Brimstone_Rain.png";
-import Clear from "@/components/images/weather/Clear.png";
-import Cloudy from "@/components/images/weather/Cloudy.png";
-import CrimsonAurora from "@/components/images/weather/Crimson_Aurora.png";
-import DenseFog from "@/components/images/weather/Dense_Fog.png";
-import ElectromagneticStorms from "@/components/images/weather/Electromagnetic_Storms.png";
-import EnergyMist from "@/components/images/weather/Energy_Mist.png";
-import HeatWave from "@/components/images/weather/Heat_Wave.png";
-import HeavyRain from "@/components/images/weather/Heavy_Rain.png";
-import Lightning from "@/components/images/weather/Lightning.png";
-import MeteorShowers from "@/components/images/weather/Meteor_Showers.png";
-import Rain from "@/components/images/weather/Rain.png";
-import Rainbow from "@/components/images/weather/Rainbow.png";
-import RisingEnergyMist from "@/components/images/weather/RisingEnergyMist.png";
-import Sandstorms from "@/components/images/weather/Sandstorms.png";
-import Spores from "@/components/images/weather/Spores.png";
-import Sunshower from "@/components/images/weather/Sunshower.png";
-import Thunderstorms from "@/components/images/weather/Thunderstorms.png";
+import Aurora from "@/components/images/guides/weather/Aurora.png";
+import BrimstoneRain from "@/components/images/guides/weather/Brimstone_Rain.png";
+import Clear from "@/components/images/guides/weather/Clear.png";
+import Cloudy from "@/components/images/guides/weather/Cloudy.png";
+import CrimsonAurora from "@/components/images/guides/weather/Crimson_Aurora.png";
+import DenseFog from "@/components/images/guides/weather/Dense_Fog.png";
+import ElectromagneticStorms from "@/components/images/guides/weather/Electromagnetic_Storms.png";
+import EnergyMist from "@/components/images/guides/weather/Energy_Mist.png";
+import HeatWave from "@/components/images/guides/weather/Heat_Wave.png";
+import HeavyRain from "@/components/images/guides/weather/Heavy_Rain.png";
+// import Lightning from "@/components/images/guides/weather/Lightning.png";
+import MeteorShowers from "@/components/images/guides/weather/Meteor_Showers.png";
+import Rain from "@/components/images/guides/weather/Rain.png";
+import Rainbow from "@/components/images/guides/weather/Rainbow.png";
+import RisingEnergyMist from "@/components/images/guides/weather/RisingEnergyMist.png";
+import Sandstorms from "@/components/images/guides/weather/Sandstorms.png";
+import Spores from "@/components/images/guides/weather/Spores.png";
+// import Sunshower from "@/components/images/weather/Sunshower.png";
+import Thunderstorms from "@/components/images/guides/weather/Thunderstorms.png";
 
 var WeatherData = [
   {

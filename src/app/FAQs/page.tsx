@@ -9,7 +9,7 @@ import FAQTabs from "@/components/images/faqs/FAQTabs";
 import FAQImg from "@/components/images/faqs/SkellFlight.jpg";
 import MiraMap from "@/components/images/faqs/MiraMap.png";
 
-function FAQs() {
+function FAQsContent() {
   return (
     <div className="faqs">
       <div className="faqs-content">
@@ -165,4 +165,10 @@ function FAQs() {
   );
 }
 
-export default FAQs;
+export default function FAQs() {
+  return (
+    <main className="FAQs">
+      <FAQsContent />
+    </main>
+  );
+}

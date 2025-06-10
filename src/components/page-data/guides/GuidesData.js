@@ -1,7 +1,7 @@
 var GuidesData = [
   {
-    id: "flora",
-    title: "Mira's Flora",
+    id: "plants",
+    title: "Mira's Fruits, Vegetables, and Flora",
     description: "A look into the plants found on Mira",
   },
   {
