@@ -26,18 +26,18 @@
   }
 
   * {
+    border: none;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    border: none;
   }
 }
 
 @layer utilities {
   .flex-center {
+    align-items: center;
     display: flex;
     justify-content: center;
-    align-items: center;
   }
 }
 
@@ -362,8 +362,8 @@
   align-items: center;
   align-self: stretch;
   display: flex;
-  gap: 24px;
   flex-wrap: wrap;
+  gap: 24px;
   justify-content: center;
 }
 
@@ -457,8 +457,8 @@
 .guide-tags {
   display: flex;
   flex-direction: row;
-  gap: 8px;
   flex-wrap: wrap;
+  gap: 8px;
   margin-top: 4px;
 }
 
@@ -532,30 +532,30 @@
 }
 
 .faq-section-cards {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  gap: 24px;
   align-self: stretch;
+  display: flex;
   flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
 }
 
 .faq-card {
-  display: flex;
-  height: 52px;
-  padding: 16px;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
+  background: var(--Transparent-Cadet-Gray, rgba(122, 155, 159, 0.15));
   border-radius: 8px;
   border: 1px solid var(--Transparent-Midnight-Green, rgba(28, 65, 78, 0.15));
-  background: var(--Transparent-Cadet-Gray, rgba(122, 155, 159, 0.15));
   color: var(--Navy-Black, #05080a);
+  display: flex;
+  flex-direction: column;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
+  height: 52px;
+  gap: 16px;
   line-height: 18px;
+  padding: 16px;
   transition: box-shadow 0.2s;
 }
 
@@ -584,10 +584,10 @@ a:hover .faq-card {
 }
 
 .question-answer {
+  border-left: 4px solid var(--electric-blue);
   display: flex;
   flex-direction: column;
   gap: 16px;
-  border-left: 4px solid var(--electric-blue);
   padding-left: 20px;
 }
 
@@ -614,23 +614,23 @@ a:hover .faq-card {
 }
 
 .page-header {
-  display: flex;
-  height: 520px;
-  width: 100%;
-  justify-content: center;
   align-items: center;
   align-self: stretch;
+  display: flex;
+  height: 520px;
+  justify-content: center;
   padding: 60px 128px;
+  width: 100%;
 }
 
 .page-header h1 {
   color: var(--midnight-green);
-  text-align: center;
   font-family: var(--font-main);
   font-size: 36px;
   font-style: normal;
   font-weight: 700;
   line-height: 40px;
+  text-align: center;
 }
 
 .page-header img {
@@ -666,10 +666,10 @@ a:hover .faq-card {
 
 @media (max-width: 420px) {
   .guide-list {
+    align-items: center;
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    align-items: center;
   }
 
   .article {
@@ -677,9 +677,9 @@ a:hover .faq-card {
   }
 
   .guide-item {
-    width: 100%;
-    padding: 12px;
     font-size: 14px;
+    padding: 12px;
+    width: 100%;
   }
 }
 
@@ -689,15 +689,15 @@ a:hover .faq-card {
   }
 
   .guide-list {
+    align-items: center;
     flex-direction: column;
     gap: 16px;
     width: 100%;
-    align-items: center;
   }
 
   .guide-item {
-    width: 90%;
     padding: 12px;
+    width: 90%;
   }
 
   .article-text {
@@ -709,8 +709,8 @@ a:hover .faq-card {
 @media (max-width: 540px) {
   .navbar {
     align-items: flex-start;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     height: 80px;
   }
 
@@ -909,12 +909,12 @@ a:hover .faq-card {
   }
 
   .faq-questions {
-    width: 100%;
     gap: 16px;
+    width: 100%;
   }
   .question-answer {
-    padding: 8px;
     font-size: 16px;
+    padding: 8px;
   }
 }
 
@@ -1279,8 +1279,8 @@ a:hover .faq-card {
   }
 
   .guide-item {
-    width: 320px;
     padding: 20px;
+    width: 320px;
   }
 
   .customer-review {
@@ -1369,8 +1369,8 @@ a:hover .faq-card {
   }
 
   .guide-item {
-    width: 320px;
     padding: 20px;
+    width: 320px;
   }
 
   .customer-review {
