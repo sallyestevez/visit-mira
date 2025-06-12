@@ -4,8 +4,6 @@ import Image from "next/image";
 
 import PlantData from "@/components/page-data/guides/PlantData";
 
-import MiraImg from "@/components/images/home/Mira.png";
-
 export default function PlantList() {
   const [plants] = useState(PlantData);
   return (
