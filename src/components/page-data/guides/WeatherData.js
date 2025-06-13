@@ -12,7 +12,7 @@ import HeavyRain from "@/components/images/guides/weather/Heavy_Rain.png";
 import MeteorShowers from "@/components/images/guides/weather/Meteor_Showers.png";
 import Rain from "@/components/images/guides/weather/Rain.png";
 import Rainbow from "@/components/images/guides/weather/Rainbow.png";
-import RisingEnergyMist from "@/components/images/guides/weather/RisingEnergyMist.png";
+import RisingEnergyMist from "@/components/images/guides/weather/Rising_Energy_Mist.png";
 import Sandstorms from "@/components/images/guides/weather/Sandstorms.png";
 import Spores from "@/components/images/guides/weather/Spores.png";
 // import Sunshower from "@/components/images/weather/Sunshower.png";
