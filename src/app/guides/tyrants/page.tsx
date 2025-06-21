@@ -2,36 +2,33 @@
 import React from "react";
 
 import PageHeader from "@/components/PageHeader";
-import ArchaeologyList from "@/components/page-data/guides/ArchaeologyList";
+import TyrantsList from "@/components/page-data/guides/TyrantsList";
 import GuidesData from "@/components/page-data/guides/GuidesData";
 import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
 
-function ArchaeologyContent() {
+function TyrantsContent() {
   return (
-    <div className="archaeology">
-      <div className="archaeology-content">
+    <div className="tyrants">
+      <div className="tyrants-content">
         <div className="guides-header">
-          <PageHeader
-            pageTitle="Archaeological Wonders"
-            backgroundImage={GuidesHeader}
-          />
+          <PageHeader pageTitle="Tyrants" backgroundImage={GuidesHeader} />
         </div>
         <div className="guides-description">
-          <h2>{GuidesData[1].title}</h2>
-          <p>{GuidesData[1].description}</p>
+          <h2>{GuidesData[3].title}</h2>
+          <p>{GuidesData[3].description}</p>
         </div>
         <div className="home-section">
-          <ArchaeologyList />
+          <TyrantsList />
         </div>
       </div>
     </div>
   );
 }
 
-export default function Archaeology() {
+export default function Tyrants() {
   return (
-    <main className="archaeology">
-      <ArchaeologyContent />
+    <main className="tyrants">
+      <TyrantsContent />
     </main>
   );
 }

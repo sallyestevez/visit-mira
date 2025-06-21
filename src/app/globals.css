@@ -450,6 +450,11 @@
   gap: 8px;
 }
 
+.tyrants {
+  justify-content: center;
+  text-align: center;
+}
+
 .article-description p:hover {
   text-decoration: none;
 }
