@@ -4,7 +4,7 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import TyrantsList from "@/components/page-data/guides/TyrantsList";
 import GuidesData from "@/components/page-data/guides/GuidesData";
-import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
+import GuidesHeader from "@/components/images/guides/GuidesTyrants.jpg";
 
 function TyrantsContent() {
   return (

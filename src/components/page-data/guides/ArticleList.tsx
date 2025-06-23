@@ -16,7 +16,11 @@ export default function ArticleList() {
         return (
           <Link href={`/guides/${article.id}`} key={article.id}>
             <div className="article" key={article.id}>
-              <Image className="article-image" src={MiraImg} alt="Mira" />
+              <Image
+                className="article-image"
+                src={article.img}
+                alt="Article key image"
+              />
               <div className="article-text">
                 <div className="article-title">{article.title}</div>
                 <p className="article-description">{article.description}</p>
@@ -27,16 +31,4 @@ export default function ArticleList() {
       })}
     </div>
   );
-
-  // return (
-  //   <div className="article-list">
-  //     {Guides.map((article) => (
-  //       <Link href={`/guides/${article.id}`} key={article.id}>
-  //         <div className="article">
-  //           <h3>{article.title}</h3>
-  //         </div>
-  //       </Link>
-  //     ))}
-  //   </div>
-  // );
 }

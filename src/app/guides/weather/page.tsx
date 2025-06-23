@@ -4,7 +4,7 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import WeatherList from "@/components/page-data/guides/WeatherList";
 import GuidesData from "@/components/page-data/guides/GuidesData";
-import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
+import GuidesHeader from "@/components/images/guides/GuidesWeather.jpg";
 
 function WeatherContent() {
   return (

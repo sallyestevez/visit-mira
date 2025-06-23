@@ -4,7 +4,7 @@ import React from "react";
 import PageHeader from "@/components/PageHeader";
 import ArchaeologyList from "@/components/page-data/guides/ArchaeologyList";
 import GuidesData from "@/components/page-data/guides/GuidesData";
-import GuidesHeader from "@/components/images/guides/GuidesSkell.jpg";
+import GuidesHeader from "@/components/images/guides/GuidesArchaeology.jpg";
 
 function ArchaeologyContent() {
   return (

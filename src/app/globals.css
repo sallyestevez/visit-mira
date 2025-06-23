@@ -47,6 +47,11 @@
   font-size: 20px;
   font-weight: 700;
   height: 84px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
 }
 
 .container {
@@ -72,6 +77,8 @@
 
 .menu-icon {
   display: none;
+  cursor: pointer;
+  z-index: 1001;
 }
 
 .nav-page-links {
@@ -1147,6 +1154,43 @@ a:hover .faq-card {
     display: flex;
     flex: 1 0 0;
     gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block;
+    color: var(--electric-blue);
+  }
+  .nav-page-links {
+    display: none;
+    position: absolute;
+    top: 64px; /* Adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    background: var(--midnight-green, #1c414e);
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 24px 0;
+    z-index: 1000;
+  }
+  .nav-page-links.active {
+    display: flex;
+  }
+}
+
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+  .nav-page-links {
+    display: flex !important;
+    flex-direction: row;
+    gap: 32px;
+    position: static;
+    background: none;
+    padding: 0;
   }
 }
 
