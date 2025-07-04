@@ -29,6 +29,12 @@ var GuidesData = [
     title: "A Look into Tyrants",
     description: "Learn about the tyrants found across the continents",
   },
+  {
+    id: "fauna",
+    img: Fauna,
+    title: "Mira's Fauna",
+    description: "A look into the animals found on Mira",
+  },
 ];
 
 export default GuidesData;

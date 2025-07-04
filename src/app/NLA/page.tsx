@@ -36,10 +36,10 @@ function NLAContent() {
         <div className="locations-list nla-districts">
           {NLADistricts.map((district) => {
             return (
-              <div className="destination-card" key={district.id}>
-                <h2 className="destination-card-title">{district.title}</h2>
-                <div className="destination-card-image">
+              <div className="nla-image" key={district.id}>
+                <div className="nla-image">
                   <Image
+                    className="nla-home-image"
                     src={district.img}
                     width={720}
                     height={400}
@@ -47,6 +47,7 @@ function NLAContent() {
                     loading="lazy"
                   />
                 </div>
+                <div className="nla-title">{district.title}</div>
               </div>
             );
           })}
