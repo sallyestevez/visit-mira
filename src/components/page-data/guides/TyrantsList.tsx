@@ -15,7 +15,8 @@ export default function TyrantsList() {
             <div className="guide-text tyrants">
               <div className="guide-title">{tyrant.name}</div>
               <div className="guide-location">
-                Found in {tyrant.region}'s <strong>{tyrant.location}</strong>
+                Found in {tyrant.region}&apos;s{" "}
+                <strong>{tyrant.location}</strong>
               </div>
               <p className="guide-item-level">Level {tyrant.level}</p>
               <div className="guide-tags tyrants">
