@@ -9,6 +9,34 @@ import FAQTabs from "@/components/images/faqs/FAQTabs";
 import FAQImg from "@/components/images/faqs/SkellFlight.jpg";
 import MiraMap from "@/components/images/faqs/MiraMap.png";
 
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+Fancybox.bind("[data-fancybox]", {
+  theme: "dark",
+  mainStyle: {
+    "--f-toolbar-padding": "0",
+    "--f-button-svg-stroke-width": "1.5",
+    "--f-arrow-svg-stroke-width": "1.75",
+    "--f-thumb-width": "82px",
+    "--f-thumb-height": "82px",
+    "--f-thumb-border-radius": "8px",
+    "--f-thumb-selected-shadow": "inset 0 0 0 2px #fff, 0 0 0 1.5px #ff2e00",
+  },
+  zoomEffect: false,
+  fadeEffect: false,
+  dragToClose: false,
+  Carousel: {
+    Toolbar: {
+      absolute: false,
+      display: {
+        middle: ["counter"],
+        right: ["toggleFull", "thumbs", "close"],
+      },
+    },
+  },
+});
+
 function FAQsContent() {
   return (
     <div className="faqs">
@@ -61,6 +89,8 @@ function FAQsContent() {
                 alt="Map of Mira"
                 width={720}
                 height={400}
+                data-fancybox
+                data-caption="Map of Mira"
               />
               <p>{FAQsData[3].answer2}</p>
             </div>

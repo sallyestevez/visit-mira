@@ -7,6 +7,34 @@ import NoctilumData from "@/components/page-data/destinations/NoctilumData";
 
 import NoctilumImg from "@/components/images/destinations/noctilum/Noctilum.jpg";
 
+import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
+import "@fancyapps/ui/dist/fancybox/fancybox.css";
+
+Fancybox.bind("[data-fancybox]", {
+  theme: "dark",
+  mainStyle: {
+    "--f-toolbar-padding": "0",
+    "--f-button-svg-stroke-width": "1.5",
+    "--f-arrow-svg-stroke-width": "1.75",
+    "--f-thumb-width": "82px",
+    "--f-thumb-height": "82px",
+    "--f-thumb-border-radius": "8px",
+    "--f-thumb-selected-shadow": "inset 0 0 0 2px #fff, 0 0 0 1.5px #ff2e00",
+  },
+  zoomEffect: false,
+  fadeEffect: false,
+  dragToClose: false,
+  Carousel: {
+    Toolbar: {
+      absolute: false,
+      display: {
+        middle: ["counter"],
+        right: ["toggleFull", "thumbs", "close"],
+      },
+    },
+  },
+});
+
 export default function Noctilum() {
   const [NoctilumLocations] = useState(NoctilumData);
   return (
@@ -38,6 +66,8 @@ export default function Noctilum() {
                     height={400}
                     src={location.img}
                     alt={location.img_alt}
+                    data-fancybox
+                    data-caption={location.title}
                   />
                   <div className="location-title noctilum-title">
                     {location.title}
