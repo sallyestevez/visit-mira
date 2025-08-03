@@ -5,8 +5,6 @@ import Link from "next/link";
 
 import GuidesData from "@/components/page-data/guides/GuidesData";
 
-import MiraImg from "@/components/images/home/Mira.png";
-
 export default function ArticleList() {
   const [Guides] = useState(GuidesData);
 

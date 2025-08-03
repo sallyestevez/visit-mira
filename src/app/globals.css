@@ -171,6 +171,21 @@
   line-height: 22px;
 }
 
+.home-image {
+  transition:
+    box-shadow 0.2s,
+    transform 0.2s;
+  box-shadow: 0 2px 8px rgba(28, 65, 78, 0.08);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.home-image:hover,
+.home-image:focus-within {
+  box-shadow: 0 8px 24px rgba(28, 65, 78, 0.18);
+  transform: translateY(-4px) scale(1.03);
+}
+
 .mira-description,
 .destination-page-description,
 .destinations-description,
@@ -274,6 +289,10 @@
   text-decoration: underline;
 }
 
+.travel-guides a:hover {
+  text-decoration: none;
+}
+
 .nla-image {
   align-items: center;
   background: var(--transparent-cadet-gray, rgba(122, 155, 159, 0.08));
@@ -320,6 +339,20 @@
   display: flex;
   gap: 24px;
   justify-content: center;
+}
+
+.articles-list a {
+  text-decoration: none;
+}
+
+.articles-list a:hover .article-title,
+.articles-list a:focus .article-title {
+  text-decoration: underline;
+}
+
+.articles-list a:hover .article-description,
+.articles-list a:focus .article-description {
+  text-decoration: none !important;
 }
 
 .destination,
@@ -499,8 +532,8 @@
 
 .guide-tags div {
   align-items: center;
-  background: var(--Transparent-Cadet-Gray, rgba(122, 155, 159, 0.15));
-  border: 0.5px solid var(--Transparent-Midnight-Green, rgba(28, 65, 78, 0.15));
+  background: var(--transparent-cadet-gray, rgba(122, 155, 159, 0.15));
+  border: 0.5px solid var(--transparent-midnight-green, rgba(28, 65, 78, 0.15));
   border-radius: 4px;
   display: flex;
   font-size: 12px;
@@ -576,7 +609,7 @@
 }
 
 .faq-section-cards a:hover {
-  background-color: var(--Midnight-Green, rgb(28, 65, 78));
+  background-color: var(--midnight-green, rgb(28, 65, 78));
   border: 2.5px solid var(--cadet-gray-1);
   border-radius: 8px;
   color: var(--cadet-gray-1);
@@ -596,14 +629,14 @@
 
 .faq-card {
   align-items: center;
-  background: var(--Transparent-Cadet-Gray, rgba(122, 155, 159, 0.15));
+  background: var(--transparent-cadet-gray, rgba(122, 155, 159, 0.15));
   border-radius: 8px;
-  border: 1px solid var(--Transparent-Midnight-Green, rgba(28, 65, 78, 0.15));
+  border: 1px solid var(--transparent-midnight-green, rgba(28, 65, 78, 0.15));
   box-shadow: 0 2px 8px rgba(28, 65, 78, 0.08);
   color: var(--midnight-green, #1c414e);
   display: flex;
   flex-direction: column;
-  font-family: Roboto;
+  font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -622,7 +655,7 @@
 
 .faq-card:hover,
 .faq-card:focus {
-  box-shadow: 0 6px 16px rgba(28, 65, 78, 0.16);
+  box-shadow: 0 6px 24px rgba(28, 65, 78, 0.16);
   outline: none;
   transform: translateY(-2px) scale(1.03);
 }

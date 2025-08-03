@@ -20,9 +20,9 @@ function HomeContent() {
           <h1>Welcome to Mira</h1>
           <p>Mira is a brand-new destination for those who love adventure.</p>
         </div>
-        <div className="home-image flex-1 gap-2 sm:gap-0">
+        <div className="flex-1 gap-2 sm:gap-0">
           <Image
-            className="h-auto w-full rounded-2xl md:w-auto lg:h-[356px]"
+            className="home-image h-auto w-full rounded-2xl md:w-auto lg:h-[356px]"
             src={Mira}
             width={720}
             height={400}
