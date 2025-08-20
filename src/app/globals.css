@@ -43,7 +43,7 @@
 
 .navbar {
   background-color: var(--deep-black);
-  font-family: var(--font-main);
+  font-family: "Jost", sans-serif;
   font-size: 20px;
   font-weight: 700;
   height: 84px;
@@ -158,7 +158,7 @@
 }
 
 .home-title h1 {
-  font-family: var(--font-main);
+  font-family: "Jost", sans-serif;
   font-size: 36px;
   font-weight: 700;
   line-height: 40px;
@@ -239,7 +239,7 @@
 .faqs-description h2,
 .guides-description h2,
 .faqs-description h2 {
-  font-family: var(--font-main);
+  font-family: "Jost", sans-serif;
   font-size: 32px;
   font-weight: 600;
   line-height: 36px;
