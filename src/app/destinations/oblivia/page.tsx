@@ -9,6 +9,7 @@ import ObliviaImg from "@/components/images/destinations/oblivia/Oblivia.jpg";
 
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import LocationImage from "@/components/LocationImage";
 
 Fancybox.bind("[data-fancybox]", {
   theme: "dark",
@@ -58,22 +59,7 @@ export default function Oblivia() {
           </div>
           <div className="locations-list">
             {ObliviaLocations.map((location) => {
-              return (
-                <div className="location" key={location.id}>
-                  <Image
-                    className="location-image oblivia-location-image"
-                    width={720}
-                    height={400}
-                    src={location.img}
-                    alt={location.img_alt}
-                    data-fancybox
-                    data-caption={location.title}
-                  />
-                  <div className="location-title oblivia-title">
-                    {location.title}
-                  </div>
-                </div>
-              );
+              return <LocationImage key={location.id} data={location} />;
             })}
           </div>
         </div>

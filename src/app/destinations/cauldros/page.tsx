@@ -9,6 +9,8 @@ import CauldrosImg from "@/components/images/destinations/cauldros/Cauldros.jpg"
 
 import { Fancybox } from "@fancyapps/ui/dist/fancybox/";
 import "@fancyapps/ui/dist/fancybox/fancybox.css";
+import FadeInSection from "@/components/FadeInSection";
+import LocationImage from "@/components/LocationImage";
 
 Fancybox.bind("[data-fancybox]", {
   theme: "dark",
@@ -59,22 +61,7 @@ export default function Cauldros() {
           </div>
           <div className="locations-list">
             {CauldrosLocations.map((location) => {
-              return (
-                <div className="location" key={location.id}>
-                  <Image
-                    className="location-image cauldros-location-image"
-                    width={720}
-                    height={400}
-                    src={location.img}
-                    alt={location.img_alt}
-                    data-fancybox
-                    data-caption={location.title}
-                  />
-                  <div className="location-title cauldros-title">
-                    {location.title}
-                  </div>
-                </div>
-              );
+              return <LocationImage key={location.id} data={location} />;
             })}
           </div>
         </div>

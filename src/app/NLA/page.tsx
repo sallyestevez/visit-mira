@@ -6,6 +6,8 @@ import PageHeader from "@/components/PageHeader";
 import NLAData from "@/components/page-data/NLAData";
 
 import NewLosAngeles from "@/components/images/nla/New_Los_Angeles.jpg";
+import FadeInSection from "@/components/FadeInSection";
+import LocationImage from "@/components/LocationImage";
 
 function NLAContent() {
   const [NLADistricts] = useState(NLAData);
@@ -18,7 +20,7 @@ function NLAContent() {
             backgroundImage={NewLosAngeles}
           />
         </div>
-        <div className="destination-page-description nla-page-description">
+        <div className="destination-page-description">
           <p>
             This location is based on the city of Los Angeles on Earth. It is
             separated into four districts: Administrative, Commercial,
@@ -36,19 +38,11 @@ function NLAContent() {
         <div className="locations-list nla-districts">
           {NLADistricts.map((district) => {
             return (
-              <div className="nla-image" key={district.id}>
-                <div className="nla-image">
-                  <Image
-                    className="nla-home-image"
-                    src={district.img}
-                    width={720}
-                    height={400}
-                    alt={district.img_alt}
-                    loading="lazy"
-                  />
-                </div>
-                <div className="nla-title">{district.title}</div>
-              </div>
+              <LocationImage
+                key={district.id}
+                data={district}
+                className="nla-image !h-full"
+              />
             );
           })}
         </div>
