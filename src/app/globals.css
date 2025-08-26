@@ -12,6 +12,7 @@
     --deep-black: #000000;
     --electric-blue: #7fe9ec;
     --midnight-green: #1c414e;
+    --midnight-green-2: #30505c;
     --platinum: #d3d9d9;
     --navy-black: #05080a;
     --ash-gray: #9ca39c;
@@ -86,6 +87,7 @@
   line-height: 36px;
   justify-content: flex-start;
   width: 60%;
+  align-items: center;
 }
 
 .menu-icon {
@@ -98,7 +100,6 @@
   align-items: center;
   display: flex;
   gap: 40px;
-  justify-content: flex-end;
   width: 40%;
 }
 
@@ -106,6 +107,7 @@
 .nav-page-links a {
   color: var(--electric-blue);
   text-decoration: none;
+  text-wrap: nowrap;
 }
 
 .home-link a:hover,
@@ -147,12 +149,6 @@
   color: #81aab5;
   text-decoration: underline;
 }
-
-/* .home-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
 
 .welcome-banner {
   border-bottom: 1px var(--transparent-midnight-green) solid;
@@ -249,7 +245,6 @@
 .destination-card h2,
 .faqs-title h2,
 .faq-section-title h2,
-.faqs-description h2,
 .guides-description h2,
 .faqs-description h2 {
   font-family: "Jost", sans-serif;
@@ -488,6 +483,9 @@
 .article-text,
 .guide-text {
   font-family: var(--font-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .article-title,
@@ -517,13 +515,6 @@
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
-}
-
-.article-text,
-.guide-text {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
 }
 
 .tyrants {
@@ -1263,32 +1254,32 @@ a:hover .faq-card {
   .nav-page-links {
     display: none;
     position: absolute;
-    top: 64px; /* Adjust based on navbar height */
+    top: 100%;
     left: 0;
     width: 100%;
     background: var(--midnight-green, #1c414e);
     flex-direction: column;
     align-items: center;
-    gap: 24px;
-    padding: 24px 0;
+    text-align: center;
     z-index: 1000;
+    gap: 0;
   }
   .nav-page-links.active {
     display: flex;
+  }
+  .nav-page-links a {
+    width: 100%;
+    height: 100%;
+    padding: 24px 0;
+  }
+  .nav-page-links a:hover {
+    background: var(--midnight-green-2);
   }
 }
 
 @media (min-width: 769px) {
   .menu-icon {
     display: none;
-  }
-  .nav-page-links {
-    display: flex !important;
-    flex-direction: row;
-    gap: 32px;
-    position: static;
-    background: none;
-    padding: 0;
   }
 }
 

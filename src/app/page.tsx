@@ -16,7 +16,7 @@ function HomeContent() {
   return (
     <div className="home-content">
       <div className="welcome-banner flex-center flex-col self-stretch lg:flex-row">
-        <div className="home-title gap-2 sm:gap-4 lg:items-start">
+        <div className="home-title items-center gap-2 sm:gap-4">
           <h1>Welcome to Mira</h1>
           <p>Mira is a brand-new destination for those who love adventure.</p>
         </div>
