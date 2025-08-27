@@ -404,6 +404,7 @@
 
 .destination-image img,
 .location-image img {
+  border-radius: 8px;
   height: 100%;
   object-fit: cover;
   width: 100%;
@@ -967,6 +968,7 @@ a:hover .faq-card {
   .destination-image img,
   .destination-card-image img,
   .location-image img {
+    border-radius: 8px;
     height: auto;
     object-fit: cover;
     width: 100%;
@@ -1481,6 +1483,7 @@ a:hover .faq-card {
   .location-image img,
   .article-image img,
   .guide-image img {
+    border-radius: 8px;
     width: 100%;
   }
 
